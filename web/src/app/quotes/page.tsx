@@ -14,7 +14,7 @@ export default function QuotesPage() {
           Quotes Hall of Fame
         </h1>
         <p className="mt-2 text-sm text-[var(--muted)]">
-          Immortalized nonsense. Edit content/quotes.json to add more.
+          Drop a clip in public/quotes and add one line to content/quotes.json.
         </p>
       </div>
 
@@ -25,12 +25,20 @@ export default function QuotesPage() {
             {q.by && (
               <p className="text-sm text-[var(--gold)] font-semibold">— {q.by}</p>
             )}
-            {"image" in q && (q as { image?: string }).image && (
+            {q.image && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src={(q as { image?: string }).image}
+                src={q.image}
                 alt=""
-                className="mt-2 max-h-48 w-full object-contain rounded"
+                className="mt-2 max-h-64 w-full object-contain rounded"
+              />
+            )}
+            {q.video && (
+              <video
+                src={q.video}
+                controls
+                playsInline
+                className="mt-2 w-full rounded bg-black"
               />
             )}
           </div>
