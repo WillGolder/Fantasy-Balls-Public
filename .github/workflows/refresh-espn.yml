@@ -1,0 +1,38 @@
+# Runs on a schedule. If ESPN cookies are missing or expired, the job fails
+# WITHOUT deleting existing JSON — the live site keeps the last archive.
+name: Refresh current ESPN season
+on:
+  schedule:
+    # Tuesday 11:00 UTC (~7am ET) football
+    - cron: "0 11 * * 2"
+    # Monday 11:00 UTC baseball
+    - cron: "0 11 * * 1"
+  workflow_dispatch: {}
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install espn-api
+        run: pip install espn-api
+      - name: Pull current seasons
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          SWID: ${{ secrets.SWID }}
+        run: |
+          if [ -z "$ESPN_S2" ] || [ -z "$SWID" ]; then
+            echo "No ESPN cookies in secrets. Skipping pull; archives unchanged."
+            exit 0
+          fi
+          python scripts/import_league_data.py || echo "Pull failed; leaving existing JSON in place."
+      - name: Commit archives if changed
+        run: |
+          git config user.name "fantasy-balls-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add web/data data || true
+          git diff --cached --quiet && echo "No data changes" && exit 0
+          git commit -m "chore: refresh ESPN archives"
+          git push || echo "Push skipped"

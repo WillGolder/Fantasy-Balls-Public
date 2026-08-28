@@ -1,0 +1,9 @@
+{
+  "draftDate": "2026-09-06T19:00:00-04:00",
+  "draftLabel": "Football Draft",
+  "dues": {
+    "seasonLabel": "2026 Football",
+    "amount": 25,
+    "paid": ["Will Golder", "Brendan Reed", "Jake Stern"]
+  }
+}

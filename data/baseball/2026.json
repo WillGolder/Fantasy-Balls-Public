@@ -1,0 +1,1690 @@
+{
+  "sport": "baseball",
+  "year": 2026,
+  "league_id": 1126511192,
+  "settings": {
+    "name": "Fantasy Balls",
+    "team_count": 12
+  },
+  "teams": [
+    {
+      "team_id": 1,
+      "team_name": "Interim Clubhouse Janitor",
+      "team_abbrev": "ICJ",
+      "owners": [
+        {
+          "displayName": "Will_Golder",
+          "firstName": "Will",
+          "lastName": "Golder",
+          "id": "{408B48FF-7644-40A6-BBDF-685E554E2340}"
+        }
+      ],
+      "wins": 16,
+      "losses": 2,
+      "ties": 0,
+      "points_for": 9661.0,
+      "points_against": 7433.0,
+      "standing": 1,
+      "final_standing": 0,
+      "division_id": 1,
+      "division_name": "Hardworking Taxpayers",
+      "logo_url": "https://i.postimg.cc/xjx1sp6x/Image-4.jpg"
+    },
+    {
+      "team_id": 2,
+      "team_name": "Mr. Cracker-Jack",
+      "team_abbrev": "INC.",
+      "owners": [
+        {
+          "displayName": "ESPNFAN1892761504",
+          "firstName": "Alec",
+          "lastName": "Kerestedjian",
+          "id": "{2A182177-9E82-451B-9A89-CE7E344F14AA}"
+        }
+      ],
+      "wins": 3,
+      "losses": 15,
+      "ties": 0,
+      "points_for": 6952.0,
+      "points_against": 8021.0,
+      "standing": 11,
+      "final_standing": 0,
+      "division_id": 1,
+      "division_name": "Hardworking Taxpayers",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/769c3010-2fcb-11f1-b693-d57f63ecfdd3"
+    },
+    {
+      "team_id": 3,
+      "team_name": "Chumbas Childhood House",
+      "team_abbrev": "DWI",
+      "owners": [
+        {
+          "displayName": "espn57510906",
+          "firstName": "Cameron",
+          "lastName": "donachie",
+          "id": "{AE84D686-95E3-46DC-84D6-8695E396DC30}"
+        }
+      ],
+      "wins": 15,
+      "losses": 3,
+      "ties": 0,
+      "points_for": 9294.0,
+      "points_against": 8216.0,
+      "standing": 2,
+      "final_standing": 0,
+      "division_id": 0,
+      "division_name": "Unemployment Experience",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/4d1e8af0-295d-11f0-a39c-e9a3592ceea8"
+    },
+    {
+      "team_id": 4,
+      "team_name": "Juiced  Balls ",
+      "team_abbrev": "JB",
+      "owners": [
+        {
+          "displayName": "ESPNFAN3642446589",
+          "firstName": "John",
+          "lastName": "Kornobis",
+          "id": "{AD4D3A10-B264-4CB3-BE6D-F24D469F1F0D}"
+        }
+      ],
+      "wins": 12,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 8822.5,
+      "points_against": 7909.5,
+      "standing": 5,
+      "final_standing": 0,
+      "division_id": 0,
+      "division_name": "Unemployment Experience",
+      "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/14.svg"
+    },
+    {
+      "team_id": 5,
+      "team_name": "Team Badussy",
+      "team_abbrev": "BDSY",
+      "owners": [
+        {
+          "displayName": "espn22601744",
+          "firstName": "Connor",
+          "lastName": "Donlon",
+          "id": "{282A939B-6433-4A32-B950-7FB2677571FC}"
+        }
+      ],
+      "wins": 13,
+      "losses": 5,
+      "ties": 0,
+      "points_for": 9191.5,
+      "points_against": 8674.5,
+      "standing": 3,
+      "final_standing": 0,
+      "division_id": 1,
+      "division_name": "Hardworking Taxpayers",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StadiumFoods-ESPN/stadium-foods_corn-dog.svg"
+    },
+    {
+      "team_id": 6,
+      "team_name": "John didnt touch Larry like me",
+      "team_abbrev": "PEDs",
+      "owners": [
+        {
+          "displayName": "ESPNFAN4925575246",
+          "firstName": "Justin",
+          "lastName": "Broschardt",
+          "id": "{8B48CF08-5212-4B73-AF35-A691739D7B75}"
+        }
+      ],
+      "wins": 9,
+      "losses": 8,
+      "ties": 1,
+      "points_for": 8243.0,
+      "points_against": 8869.5,
+      "standing": 6,
+      "final_standing": 0,
+      "division_id": 0,
+      "division_name": "Unemployment Experience",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/007c4bb0-6e9e-11f1-b80e-15498269b8f1"
+    },
+    {
+      "team_id": 7,
+      "team_name": "Balls and Wieners",
+      "team_abbrev": "CRAM",
+      "owners": [
+        {
+          "displayName": "Ginger Mets",
+          "firstName": "EDDIE",
+          "lastName": "CRAMSIE",
+          "id": "{F3D2771B-58FC-4E7C-ADBB-CB585F39D5CC}"
+        }
+      ],
+      "wins": 12,
+      "losses": 6,
+      "ties": 0,
+      "points_for": 8249.5,
+      "points_against": 9012.5,
+      "standing": 4,
+      "final_standing": 0,
+      "division_id": 1,
+      "division_name": "Hardworking Taxpayers",
+      "logo_url": "https://images.fantasypros.com/images/players/mlb/3413/headshot/250x250.png"
+    },
+    {
+      "team_id": 8,
+      "team_name": "Broken bats club ",
+      "team_abbrev": "Bbc",
+      "owners": [
+        {
+          "displayName": "Brendan k Reed",
+          "firstName": "Brendan",
+          "lastName": "Reed",
+          "id": "{71CCE141-2439-4B82-8CE1-4124397B820E}"
+        }
+      ],
+      "wins": 1,
+      "losses": 17,
+      "ties": 0,
+      "points_for": 5959.0,
+      "points_against": 7535.5,
+      "standing": 12,
+      "final_standing": 0,
+      "division_id": 1,
+      "division_name": "Hardworking Taxpayers",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/9300e580-2845-11f1-a3db-1b8e3b53005a"
+    },
+    {
+      "team_id": 9,
+      "team_name": "Canned Heat",
+      "team_abbrev": "STER",
+      "owners": [
+        {
+          "displayName": "Sternly",
+          "firstName": "Jake",
+          "lastName": "Stern",
+          "id": "{D7DB16AD-6223-4723-9B16-AD6223472313}"
+        }
+      ],
+      "wins": 9,
+      "losses": 9,
+      "ties": 0,
+      "points_for": 7212.0,
+      "points_against": 7000.0,
+      "standing": 7,
+      "final_standing": 0,
+      "division_id": 1,
+      "division_name": "Hardworking Taxpayers",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StadiumFoods-ESPN/stadium-foods_corn-dog.svg"
+    },
+    {
+      "team_id": 10,
+      "team_name": "Team Wallick",
+      "team_abbrev": "WALL",
+      "owners": [
+        {
+          "displayName": "Wallick14",
+          "firstName": "Griffin",
+          "lastName": "Wallick",
+          "id": "{8CD903BC-D4A5-4510-9903-BCD4A52510A5}"
+        }
+      ],
+      "wins": 6,
+      "losses": 12,
+      "ties": 0,
+      "points_for": 7795.5,
+      "points_against": 7572.0,
+      "standing": 9,
+      "final_standing": 0,
+      "division_id": 0,
+      "division_name": "Unemployment Experience",
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/OldTimeMickeyAndFriends/Golf_Mickey.svg"
+    },
+    {
+      "team_id": 11,
+      "team_name": "Dookie Dogz",
+      "team_abbrev": "DD",
+      "owners": [
+        {
+          "displayName": "oodogg97",
+          "firstName": "Owen",
+          "lastName": "Faust",
+          "id": "{AEDDE69F-CFC2-4D63-9DE6-9FCFC2DD631F}"
+        }
+      ],
+      "wins": 3,
+      "losses": 14,
+      "ties": 1,
+      "points_for": 6300.5,
+      "points_against": 7953.5,
+      "standing": 10,
+      "final_standing": 0,
+      "division_id": 0,
+      "division_name": "Unemployment Experience",
+      "logo_url": "https://g.espncdn.com/lm-static/flb/images/default_logos/8.svg"
+    },
+    {
+      "team_id": 12,
+      "team_name": "Kenesaw Mountain Landis",
+      "team_abbrev": "KML",
+      "owners": [
+        {
+          "displayName": "SkyDonachie",
+          "firstName": "Skyler",
+          "lastName": "Donachie",
+          "id": "{CF683DFF-833B-4907-A826-20810501C8A1}"
+        }
+      ],
+      "wins": 8,
+      "losses": 10,
+      "ties": 0,
+      "points_for": 7835.5,
+      "points_against": 7319.0,
+      "standing": 8,
+      "final_standing": 0,
+      "division_id": 0,
+      "division_name": "Unemployment Experience",
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/f120e410-01e1-11f1-8cb2-bdc05f3f329b"
+    }
+  ],
+  "matchups": [
+    {
+      "matchup_period": 1,
+      "home_team_id": 4,
+      "away_team_id": 3,
+      "home_score": 476.0,
+      "away_score": 406.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 1,
+      "home_team_id": 10,
+      "away_team_id": 6,
+      "home_score": 457.0,
+      "away_score": 346.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 1,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 431.0,
+      "away_score": 240.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 1,
+      "home_team_id": 2,
+      "away_team_id": 1,
+      "home_score": 458.5,
+      "away_score": 545.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 1,
+      "home_team_id": 7,
+      "away_team_id": 5,
+      "home_score": 531.0,
+      "away_score": 384.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 1,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 446.0,
+      "away_score": 357.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 2,
+      "home_team_id": 6,
+      "away_team_id": 3,
+      "home_score": 236.0,
+      "away_score": 265.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 2,
+      "home_team_id": 11,
+      "away_team_id": 4,
+      "home_score": 211.0,
+      "away_score": 299.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 2,
+      "home_team_id": 12,
+      "away_team_id": 10,
+      "home_score": 211.0,
+      "away_score": 385.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 2,
+      "home_team_id": 5,
+      "away_team_id": 1,
+      "home_score": 246.0,
+      "away_score": 309.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 2,
+      "home_team_id": 8,
+      "away_team_id": 2,
+      "home_score": 251.0,
+      "away_score": 209.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 2,
+      "home_team_id": 9,
+      "away_team_id": 7,
+      "home_score": 229.5,
+      "away_score": 204.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 3,
+      "home_team_id": 10,
+      "away_team_id": 3,
+      "home_score": 273.0,
+      "away_score": 350.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 3,
+      "home_team_id": 12,
+      "away_team_id": 4,
+      "home_score": 331.0,
+      "away_score": 252.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 3,
+      "home_team_id": 11,
+      "away_team_id": 6,
+      "home_score": 262.0,
+      "away_score": 262.0,
+      "winner": "TIE"
+    },
+    {
+      "matchup_period": 3,
+      "home_team_id": 7,
+      "away_team_id": 1,
+      "home_score": 245.0,
+      "away_score": 301.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 3,
+      "home_team_id": 9,
+      "away_team_id": 2,
+      "home_score": 283.0,
+      "away_score": 226.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 3,
+      "home_team_id": 8,
+      "away_team_id": 5,
+      "home_score": 292.0,
+      "away_score": 360.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 4,
+      "home_team_id": 11,
+      "away_team_id": 3,
+      "home_score": 278.0,
+      "away_score": 299.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 4,
+      "home_team_id": 10,
+      "away_team_id": 4,
+      "home_score": 276.0,
+      "away_score": 328.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 4,
+      "home_team_id": 12,
+      "away_team_id": 6,
+      "home_score": 207.5,
+      "away_score": 231.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 4,
+      "home_team_id": 8,
+      "away_team_id": 1,
+      "home_score": 266.0,
+      "away_score": 354.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 4,
+      "home_team_id": 7,
+      "away_team_id": 2,
+      "home_score": 229.0,
+      "away_score": 323.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 4,
+      "home_team_id": 9,
+      "away_team_id": 5,
+      "home_score": 286.0,
+      "away_score": 346.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 5,
+      "home_team_id": 12,
+      "away_team_id": 3,
+      "home_score": 322.0,
+      "away_score": 424.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 5,
+      "home_team_id": 6,
+      "away_team_id": 4,
+      "home_score": 182.0,
+      "away_score": 255.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 5,
+      "home_team_id": 11,
+      "away_team_id": 10,
+      "home_score": 130.0,
+      "away_score": 265.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 5,
+      "home_team_id": 9,
+      "away_team_id": 1,
+      "home_score": 254.5,
+      "away_score": 307.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 5,
+      "home_team_id": 5,
+      "away_team_id": 2,
+      "home_score": 361.0,
+      "away_score": 356.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 5,
+      "home_team_id": 8,
+      "away_team_id": 7,
+      "home_score": 237.0,
+      "away_score": 245.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 6,
+      "home_team_id": 4,
+      "away_team_id": 3,
+      "home_score": 255.0,
+      "away_score": 335.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 6,
+      "home_team_id": 11,
+      "away_team_id": 6,
+      "home_score": 219.5,
+      "away_score": 236.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 6,
+      "home_team_id": 12,
+      "away_team_id": 10,
+      "home_score": 275.0,
+      "away_score": 326.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 6,
+      "home_team_id": 2,
+      "away_team_id": 1,
+      "home_score": 313.0,
+      "away_score": 324.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 6,
+      "home_team_id": 8,
+      "away_team_id": 5,
+      "home_score": 187.5,
+      "away_score": 257.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 6,
+      "home_team_id": 9,
+      "away_team_id": 7,
+      "home_score": 261.0,
+      "away_score": 295.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 7,
+      "home_team_id": 10,
+      "away_team_id": 3,
+      "home_score": 295.0,
+      "away_score": 316.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 7,
+      "home_team_id": 11,
+      "away_team_id": 4,
+      "home_score": 220.0,
+      "away_score": 318.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 7,
+      "home_team_id": 12,
+      "away_team_id": 6,
+      "home_score": 221.0,
+      "away_score": 287.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 7,
+      "home_team_id": 5,
+      "away_team_id": 1,
+      "home_score": 283.0,
+      "away_score": 223.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 7,
+      "home_team_id": 7,
+      "away_team_id": 2,
+      "home_score": 311.0,
+      "away_score": 297.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 7,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 270.0,
+      "away_score": 140.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 8,
+      "home_team_id": 1,
+      "away_team_id": 3,
+      "home_score": 223.0,
+      "away_score": 276.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 8,
+      "home_team_id": 2,
+      "away_team_id": 4,
+      "home_score": 189.5,
+      "away_score": 347.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 8,
+      "home_team_id": 5,
+      "away_team_id": 6,
+      "home_score": 326.0,
+      "away_score": 240.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 8,
+      "home_team_id": 7,
+      "away_team_id": 10,
+      "home_score": 306.5,
+      "away_score": 286.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 8,
+      "home_team_id": 8,
+      "away_team_id": 11,
+      "home_score": 212.5,
+      "away_score": 235.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 8,
+      "home_team_id": 9,
+      "away_team_id": 12,
+      "home_score": 207.5,
+      "away_score": 239.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 9,
+      "home_team_id": 6,
+      "away_team_id": 3,
+      "home_score": 292.0,
+      "away_score": 356.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 9,
+      "home_team_id": 10,
+      "away_team_id": 4,
+      "home_score": 327.0,
+      "away_score": 286.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 9,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 278.0,
+      "away_score": 221.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 9,
+      "home_team_id": 8,
+      "away_team_id": 1,
+      "home_score": 185.0,
+      "away_score": 237.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 9,
+      "home_team_id": 5,
+      "away_team_id": 2,
+      "home_score": 350.0,
+      "away_score": 197.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 9,
+      "home_team_id": 9,
+      "away_team_id": 7,
+      "home_score": 307.0,
+      "away_score": 255.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 10,
+      "home_team_id": 11,
+      "away_team_id": 3,
+      "home_score": 169.0,
+      "away_score": 339.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 10,
+      "home_team_id": 6,
+      "away_team_id": 4,
+      "home_score": 227.0,
+      "away_score": 293.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 10,
+      "home_team_id": 12,
+      "away_team_id": 10,
+      "home_score": 170.0,
+      "away_score": 312.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 10,
+      "home_team_id": 7,
+      "away_team_id": 1,
+      "home_score": 306.0,
+      "away_score": 310.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 10,
+      "home_team_id": 8,
+      "away_team_id": 2,
+      "home_score": 217.0,
+      "away_score": 233.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 10,
+      "home_team_id": 9,
+      "away_team_id": 5,
+      "home_score": 207.0,
+      "away_score": 260.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 11,
+      "home_team_id": 4,
+      "away_team_id": 3,
+      "home_score": 312.0,
+      "away_score": 291.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 11,
+      "home_team_id": 10,
+      "away_team_id": 6,
+      "home_score": 266.0,
+      "away_score": 318.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 11,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 242.0,
+      "away_score": 177.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 11,
+      "home_team_id": 2,
+      "away_team_id": 1,
+      "home_score": 247.5,
+      "away_score": 322.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 11,
+      "home_team_id": 7,
+      "away_team_id": 5,
+      "home_score": 326.0,
+      "away_score": 230.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 11,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 323.5,
+      "away_score": 232.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 12,
+      "home_team_id": 12,
+      "away_team_id": 3,
+      "home_score": 270.0,
+      "away_score": 403.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 12,
+      "home_team_id": 11,
+      "away_team_id": 4,
+      "home_score": 236.0,
+      "away_score": 262.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 12,
+      "home_team_id": 10,
+      "away_team_id": 6,
+      "home_score": 238.0,
+      "away_score": 332.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 12,
+      "home_team_id": 5,
+      "away_team_id": 1,
+      "home_score": 349.0,
+      "away_score": 359.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 12,
+      "home_team_id": 9,
+      "away_team_id": 2,
+      "home_score": 247.0,
+      "away_score": 167.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 12,
+      "home_team_id": 8,
+      "away_team_id": 7,
+      "home_score": 139.0,
+      "away_score": 313.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 13,
+      "home_team_id": 10,
+      "away_team_id": 3,
+      "home_score": 318.0,
+      "away_score": 322.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 13,
+      "home_team_id": 12,
+      "away_team_id": 4,
+      "home_score": 347.0,
+      "away_score": 213.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 13,
+      "home_team_id": 11,
+      "away_team_id": 6,
+      "home_score": 249.0,
+      "away_score": 363.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 13,
+      "home_team_id": 8,
+      "away_team_id": 1,
+      "home_score": 123.0,
+      "away_score": 261.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 13,
+      "home_team_id": 7,
+      "away_team_id": 2,
+      "home_score": 255.0,
+      "away_score": 145.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 13,
+      "home_team_id": 9,
+      "away_team_id": 5,
+      "home_score": 323.0,
+      "away_score": 366.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 14,
+      "home_team_id": 9,
+      "away_team_id": 3,
+      "home_score": 319.0,
+      "away_score": 359.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 14,
+      "home_team_id": 8,
+      "away_team_id": 4,
+      "home_score": 168.0,
+      "away_score": 261.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 14,
+      "home_team_id": 7,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 266.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 14,
+      "home_team_id": 5,
+      "away_team_id": 10,
+      "home_score": 279.0,
+      "away_score": 223.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 14,
+      "home_team_id": 2,
+      "away_team_id": 11,
+      "home_score": 281.0,
+      "away_score": 225.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 14,
+      "home_team_id": 1,
+      "away_team_id": 12,
+      "home_score": 306.0,
+      "away_score": 292.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 15,
+      "home_team_id": 6,
+      "away_team_id": 3,
+      "home_score": 457.0,
+      "away_score": 496.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 15,
+      "home_team_id": 10,
+      "away_team_id": 4,
+      "home_score": 379.5,
+      "away_score": 388.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 15,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 456.0,
+      "away_score": 395.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 15,
+      "home_team_id": 7,
+      "away_team_id": 1,
+      "home_score": 330.0,
+      "away_score": 560.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 15,
+      "home_team_id": 5,
+      "away_team_id": 2,
+      "home_score": 480.0,
+      "away_score": 324.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 15,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 321.0,
+      "away_score": 257.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 16,
+      "home_team_id": 11,
+      "away_team_id": 3,
+      "home_score": 259.0,
+      "away_score": 231.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 16,
+      "home_team_id": 6,
+      "away_team_id": 4,
+      "home_score": 276.0,
+      "away_score": 267.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 16,
+      "home_team_id": 12,
+      "away_team_id": 10,
+      "home_score": 262.0,
+      "away_score": 239.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 16,
+      "home_team_id": 8,
+      "away_team_id": 1,
+      "home_score": 258.5,
+      "away_score": 324.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 16,
+      "home_team_id": 9,
+      "away_team_id": 2,
+      "home_score": 310.0,
+      "away_score": 224.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 16,
+      "home_team_id": 7,
+      "away_team_id": 5,
+      "home_score": 331.0,
+      "away_score": 320.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 17,
+      "home_team_id": 4,
+      "away_team_id": 3,
+      "home_score": 279.0,
+      "away_score": 294.5,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 17,
+      "home_team_id": 12,
+      "away_team_id": 6,
+      "home_score": 204.0,
+      "away_score": 272.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 17,
+      "home_team_id": 11,
+      "away_team_id": 10,
+      "home_score": 255.0,
+      "away_score": 229.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 17,
+      "home_team_id": 2,
+      "away_team_id": 1,
+      "home_score": 187.0,
+      "away_score": 262.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 17,
+      "home_team_id": 8,
+      "away_team_id": 5,
+      "home_score": 145.0,
+      "away_score": 320.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 17,
+      "home_team_id": 9,
+      "away_team_id": 7,
+      "home_score": 175.0,
+      "away_score": 339.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 18,
+      "home_team_id": 12,
+      "away_team_id": 3,
+      "home_score": 293.0,
+      "away_score": 319.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 18,
+      "home_team_id": 11,
+      "away_team_id": 4,
+      "home_score": 184.5,
+      "away_score": 221.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 18,
+      "home_team_id": 10,
+      "away_team_id": 6,
+      "home_score": 272.0,
+      "away_score": 318.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 18,
+      "home_team_id": 9,
+      "away_team_id": 1,
+      "home_score": 263.0,
+      "away_score": 332.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 18,
+      "home_team_id": 7,
+      "away_team_id": 2,
+      "home_score": 242.0,
+      "away_score": 210.5,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 18,
+      "home_team_id": 8,
+      "away_team_id": 5,
+      "home_score": 222.0,
+      "away_score": 378.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 19,
+      "home_team_id": 1,
+      "away_team_id": null,
+      "home_score": 241.0,
+      "away_score": 0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 19,
+      "home_team_id": 7,
+      "away_team_id": 4,
+      "home_score": 308.0,
+      "away_score": 230.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 19,
+      "home_team_id": 5,
+      "away_team_id": 6,
+      "home_score": 406.5,
+      "away_score": 382.0,
+      "winner": "HOME"
+    },
+    {
+      "matchup_period": 19,
+      "home_team_id": 3,
+      "away_team_id": null,
+      "home_score": 101.5,
+      "away_score": 0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 19,
+      "home_team_id": 9,
+      "away_team_id": 12,
+      "home_score": 209.0,
+      "away_score": 244.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 19,
+      "home_team_id": 10,
+      "away_team_id": 11,
+      "home_score": 188.0,
+      "away_score": 234.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 19,
+      "home_team_id": 2,
+      "away_team_id": 8,
+      "home_score": 217.0,
+      "away_score": 219.0,
+      "winner": "AWAY"
+    },
+    {
+      "matchup_period": 20,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 20,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 20,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 20,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 20,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 20,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 21,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 21,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 21,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 21,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 21,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 21,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 22,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 22,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 22,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 22,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 22,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 22,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 23,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 23,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 23,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 23,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 23,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 23,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 24,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 24,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 24,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 24,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 24,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 24,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 25,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 25,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 25,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 25,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 25,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 25,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 26,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 26,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 26,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 26,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 26,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 26,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 27,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 27,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 27,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 27,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 27,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 27,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 28,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 28,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 28,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 28,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 28,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 28,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 29,
+      "home_team_id": 1,
+      "away_team_id": 7,
+      "home_score": 380.0,
+      "away_score": 255.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 29,
+      "home_team_id": 3,
+      "away_team_id": 5,
+      "home_score": 321.0,
+      "away_score": 289.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 29,
+      "home_team_id": 4,
+      "away_team_id": 6,
+      "home_score": 328.0,
+      "away_score": 272.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 29,
+      "home_team_id": 12,
+      "away_team_id": 11,
+      "home_score": 254.0,
+      "away_score": 190.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 29,
+      "home_team_id": 9,
+      "away_team_id": 8,
+      "home_score": 197.0,
+      "away_score": 185.0,
+      "winner": "UNDECIDED"
+    },
+    {
+      "matchup_period": 29,
+      "home_team_id": 10,
+      "away_team_id": 2,
+      "home_score": 224.0,
+      "away_score": 214.5,
+      "winner": "UNDECIDED"
+    }
+  ],
+  "draft": []
+}

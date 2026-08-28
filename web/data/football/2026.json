@@ -1,0 +1,278 @@
+{
+  "sport": "football",
+  "league_id": 225969362,
+  "year": 2026,
+  "pulled_at": "2026-08-23T23:54:16.352150Z",
+  "settings": {
+    "name": "Fantasy Balls",
+    "scoring_type": "H2H_POINTS",
+    "reg_season_count": 14,
+    "playoff_team_count": 6,
+    "veto_votes_required": 4,
+    "team_count": 10
+  },
+  "teams": [
+    {
+      "team_id": 1,
+      "team_name": "Women",
+      "team_abbrev": "W",
+      "owners": [
+        {
+          "displayName": "Will_Golder",
+          "firstName": "Will",
+          "lastName": "Golder",
+          "id": "{408B48FF-7644-40A6-BBDF-685E554E2340}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://sports.cbsimg.net/images/blogs/Trump-Patriots-12-17-15.png",
+      "division_id": 0,
+      "division_name": "Illiterate Retards"
+    },
+    {
+      "team_id": 2,
+      "team_name": "Nabers Touched My Penix",
+      "team_abbrev": "KORN",
+      "owners": [
+        {
+          "displayName": "ESPNFAN3642446589",
+          "firstName": "John",
+          "lastName": "Kornobis",
+          "id": "{AD4D3A10-B264-4CB3-BE6D-F24D469F1F0D}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/CreepShow-ToddDetwiler/CreepShow-19.svg",
+      "division_id": 0,
+      "division_name": "Illiterate Retards"
+    },
+    {
+      "team_id": 3,
+      "team_name": "1-13",
+      "team_abbrev": "\ud83d\udc36\ud83d\udca9",
+      "owners": [
+        {
+          "displayName": "joebraun43",
+          "firstName": "Joseph",
+          "lastName": "Braun",
+          "id": "{FFCCB3F2-3703-4C05-8CB3-F237031C05E3}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StadiumFoods-ESPN/stadium-foods_beer.svg",
+      "division_id": 1,
+      "division_name": "Pompous Assholes"
+    },
+    {
+      "team_id": 4,
+      "team_name": "Unabomber",
+      "team_abbrev": "CD",
+      "owners": [
+        {
+          "displayName": "Brendan k Reed",
+          "firstName": "Brendan",
+          "lastName": "Reed",
+          "id": "{71CCE141-2439-4B82-8CE1-4124397B820E}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/22e41a70-92bb-11f1-9b94-67d561221a90",
+      "division_id": 0,
+      "division_name": "Illiterate Retards"
+    },
+    {
+      "team_id": 5,
+      "team_name": "Canned Heat",
+      "team_abbrev": "CND",
+      "owners": [
+        {
+          "displayName": "Sternly",
+          "firstName": "Jake",
+          "lastName": "Stern",
+          "id": "{D7DB16AD-6223-4723-9B16-AD6223472313}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/AtTheStadium-RobbHarskamp/At_The_Stadium_06.svg",
+      "division_id": 1,
+      "division_name": "Pompous Assholes"
+    },
+    {
+      "team_id": 6,
+      "team_name": "Barkleys Thunder Thighs",
+      "team_abbrev": "CRAM",
+      "owners": [
+        {
+          "displayName": "Ginger Mets",
+          "firstName": "EDDIE",
+          "lastName": "CRAMSIE",
+          "id": "{F3D2771B-58FC-4E7C-ADBB-CB585F39D5CC}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://g.espncdn.com/lm-static/ffl/images/default_logos/14.svg",
+      "division_id": 1,
+      "division_name": "Pompous Assholes"
+    },
+    {
+      "team_id": 7,
+      "team_name": "Hunter? I hardly know 'er!",
+      "team_abbrev": "CHK",
+      "owners": [
+        {
+          "displayName": "Andy Hines",
+          "firstName": "Andy",
+          "lastName": "Hines",
+          "id": "{F6BD1FE7-F240-4450-BD1F-E7F240F450A0}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://g.espncdn.com/lm-static/ffl/images/default_logos/19.svg",
+      "division_id": 1,
+      "division_name": "Pompous Assholes"
+    },
+    {
+      "team_id": 8,
+      "team_name": "Egbukakke",
+      "team_abbrev": "BLM",
+      "owners": [
+        {
+          "displayName": "ESPNFAN4925575246",
+          "firstName": "Justin",
+          "lastName": "Broschardt",
+          "id": "{8B48CF08-5212-4B73-AF35-A691739D7B75}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg",
+      "division_id": 0,
+      "division_name": "Illiterate Retards"
+    },
+    {
+      "team_id": 9,
+      "team_name": "Tucker Kraft in my Bass",
+      "team_abbrev": "KERE",
+      "owners": [
+        {
+          "displayName": "ESPNFAN1892761504",
+          "firstName": "Alec",
+          "lastName": "Kerestedjian",
+          "id": "{2A182177-9E82-451B-9A89-CE7E344F14AA}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/e878fca0-8aa7-11f0-9d0e-d3c969c03a65",
+      "division_id": 1,
+      "division_name": "Pompous Assholes"
+    },
+    {
+      "team_id": 10,
+      "team_name": "Upstate NY Sucks",
+      "team_abbrev": "POOp",
+      "owners": [
+        {
+          "displayName": "espn22601744",
+          "firstName": "Connor",
+          "lastName": "Donlon",
+          "id": "{282A939B-6433-4A32-B950-7FB2677571FC}"
+        }
+      ],
+      "wins": 0,
+      "losses": 0,
+      "ties": 0,
+      "points_for": 0.0,
+      "points_against": 0.0,
+      "standing": 0,
+      "final_standing": 0,
+      "playoff_pct": 0,
+      "streak_type": "NONE",
+      "streak_length": 0,
+      "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Hulk.svg",
+      "division_id": 0,
+      "division_name": "Illiterate Retards"
+    }
+  ],
+  "matchups": [],
+  "draft": []
+}
