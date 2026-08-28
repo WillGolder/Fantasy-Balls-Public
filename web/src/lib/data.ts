@@ -711,17 +711,9 @@ export function getLastPlaceHistory(): {
         last = sorted[0];
       }
       if (!last) continue;
-      // skip in-progress seasons where final_standing is 0 for everyone
+      // do not assign last place in unfinished seasons
       if (season.teams.every((t) => !t.final_standing || t.final_standing === 0)) {
-        // use worst record instead for in-progress
-        last = [...season.teams].sort((a, b) => {
-          const at = a.wins + a.losses + (a.ties || 0);
-          const bt = b.wins + b.losses + (b.ties || 0);
-          const ap = at > 0 ? a.wins / at : 0;
-          const bp = bt > 0 ? b.wins / bt : 0;
-          if (ap !== bp) return ap - bp;
-          return (a.points_for || 0) - (b.points_for || 0);
-        })[0];
+        continue;
       }
       if (!last) continue;
       out.push({
