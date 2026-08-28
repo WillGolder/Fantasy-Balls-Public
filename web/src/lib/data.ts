@@ -224,6 +224,12 @@ export function getHeadToHeadRecords(
       if (!homeLookup || !awayLookup) continue;
       if (homeLookup.key === awayLookup.key) continue; // same owner (shouldn't happen)
 
+      const winnerFlag = String(m.winner || "").toUpperCase();
+      // ESPN baseball dumps future/playoff placeholder rows as UNDECIDED
+      if (winnerFlag === "UNDECIDED" || winnerFlag === "PENDING" || winnerFlag === "SCHEDULED") {
+        continue;
+      }
+
       const homeScore = m.home_score;
       const awayScore = m.away_score;
 
@@ -629,7 +635,7 @@ export function getDivisionTitles(): {
       if (!season.teams.some((t) => t.final_standing === 1)) continue;
       const byDiv = new Map<string, typeof season.teams>();
       for (const t of season.teams) {
-        const key = String(t.division_id ?? t.division_name ?? "league");
+        const key = String((t as { division_id?: number | string | null }).division_id ?? t.division_name ?? "league");
         if (!byDiv.has(key)) byDiv.set(key, []);
         byDiv.get(key)!.push(t);
       }
@@ -723,7 +729,7 @@ export function getLastPlaceHistory(): {
         year: season.year,
         teamName: last.team_name,
         ownerName: ownerDisplayName(last),
-        pointsFor: last.points_for,
+        pointsFor: last.points_for ?? null,
       });
     }
   }
@@ -903,9 +909,13 @@ export function getBiggestRival(displayName: string): {
       myWins = r.winsB; theirWins = r.winsA; ties = r.ties; opp = r.ownerA;
     } else continue;
     const games = myWins + theirWins + ties;
-    if (games < 10) continue;
+    if (games < 1) continue;
     const pct = games > 0 ? myWins / games : 0;
-    if (!worst || pct < worst.pct) {
+    if (
+      !worst ||
+      pct < worst.pct ||
+      (pct === worst.pct && games > worst.games)
+    ) {
       worst = { opponent: opp, wins: myWins, losses: theirWins, ties, games, pct };
     }
   }
@@ -1167,8 +1177,8 @@ export function getOwnerSeasonLog(displayName: string) {
           wins: t.wins,
           losses: t.losses,
           ties: t.ties || 0,
-          pointsFor: t.points_for,
-          finalStanding: t.final_standing,
+          pointsFor: t.points_for ?? null,
+          finalStanding: t.final_standing ?? null,
           divisionName: t.division_name || null,
         });
       }

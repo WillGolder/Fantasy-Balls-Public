@@ -19,6 +19,7 @@ export type Team = {
   final_standing?: number | null;
   logo_url?: string | null;
   division_name?: string | null;
+  division_id?: number | string | null;
 };
 
 export type Matchup = {
