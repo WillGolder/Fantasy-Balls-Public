@@ -909,7 +909,7 @@ export function getBiggestRival(displayName: string): {
       myWins = r.winsB; theirWins = r.winsA; ties = r.ties; opp = r.ownerA;
     } else continue;
     const games = myWins + theirWins + ties;
-    if (games < 1) continue;
+    if (games < 10) continue;
     const pct = games > 0 ? myWins / games : 0;
     if (
       !worst ||

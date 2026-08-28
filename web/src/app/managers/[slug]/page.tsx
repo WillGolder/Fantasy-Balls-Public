@@ -56,11 +56,13 @@ export default async function ManagerProfilePage({
           Joined {joined ?? "—"} · {m.wins}-{m.losses}
           {m.ties ? `-${m.ties}` : ""} ({winPct.toFixed(1)}%) · {m.championships}{" "}
           titles
-          {rival && (
+          {rival ? (
             <>
               {" · "}Biggest rival: {rival.opponent} ({rival.wins}–{rival.losses}
               {rival.ties ? `–${rival.ties}` : ""})
             </>
+          ) : (
+            <> · No rival yet (min 10 games)</>
           )}
         </p>
         </div>

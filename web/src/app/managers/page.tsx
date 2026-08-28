@@ -67,7 +67,9 @@ export default function ManagersPage() {
                       ({rival.wins}–{rival.losses}
                       {rival.ties ? `–${rival.ties}` : ""})
                     </>
-                  ) : null}
+                  ) : (
+                    <> · No rival yet (min 10 games)</>
+                  )}
                 </p>
                 </div>
                 {(() => {
