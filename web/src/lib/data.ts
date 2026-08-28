@@ -900,7 +900,7 @@ export function getBiggestRival(displayName: string): {
   games: number;
 } | null {
   const h2h = getHeadToHeadRecordsDetailed();
-  let worst: { opponent: string; wins: number; losses: number; ties: number; games: number; pct: number } | null = null;
+  let best: { opponent: string; wins: number; losses: number; ties: number; games: number; gap: number } | null = null;
   for (const r of h2h) {
     let myWins = 0, theirWins = 0, ties = 0, opp = "";
     if (r.ownerA === displayName) {
@@ -910,17 +910,17 @@ export function getBiggestRival(displayName: string): {
     } else continue;
     const games = myWins + theirWins + ties;
     if (games < 10) continue;
-    const pct = games > 0 ? myWins / games : 0;
+    const gap = Math.abs(myWins - theirWins) / games;
     if (
-      !worst ||
-      pct < worst.pct ||
-      (pct === worst.pct && games > worst.games)
+      !best ||
+      gap < best.gap ||
+      (gap === best.gap && games > best.games)
     ) {
-      worst = { opponent: opp, wins: myWins, losses: theirWins, ties, games, pct };
+      best = { opponent: opp, wins: myWins, losses: theirWins, ties, games, gap };
     }
   }
-  if (!worst) return null;
-  return { opponent: worst.opponent, wins: worst.wins, losses: worst.losses, ties: worst.ties, games: worst.games };
+  if (!best) return null;
+  return { opponent: best.opponent, wins: best.wins, losses: best.losses, ties: best.ties, games: best.games };
 }
 
 export function getRivalryTiles(minGames = 10) {
