@@ -34,12 +34,12 @@ export default function AllTimePage() {
   const names = standings.map((s) => s.name);
   const recordMap: Record<string, { wa: number; wb: number; ties: number }> = {};
   for (const r of h2h) {
-    recordMap[`${r.ownerA}__${r.ownerB}`] = {
+    recordMap[`${siteName(r.ownerA)}__${siteName(r.ownerB)}`] = {
       wa: r.winsA,
       wb: r.winsB,
       ties: r.ties,
     };
-    recordMap[`${r.ownerB}__${r.ownerA}`] = {
+    recordMap[`${siteName(r.ownerB)}__${siteName(r.ownerA)}`] = {
       wa: r.winsB,
       wb: r.winsA,
       ties: r.ties,
