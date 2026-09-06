@@ -1,11 +1,12 @@
 {
   "sport": "baseball",
-  "year": 2024,
   "league_id": 1126511192,
+  "year": 2024,
+  "pulled_at": "2026-09-06T15:37:02.474146Z",
   "settings": {
     "name": "Fantasy Balls",
-    "team_count": 10,
-    "playoff_team_count": 6
+    "scoring_type": "H2H_POINTS",
+    "team_count": 10
   },
   "teams": [
     {
@@ -23,8 +24,8 @@
       "wins": 9,
       "losses": 8,
       "ties": 0,
-      "points_for": 9432.0,
-      "points_against": 8906.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 6,
       "final_standing": 3,
       "playoff_pct": null,
@@ -49,8 +50,8 @@
       "wins": 3,
       "losses": 14,
       "ties": 0,
-      "points_for": 7547.0,
-      "points_against": 9096.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 10,
       "final_standing": 8,
       "playoff_pct": null,
@@ -75,8 +76,8 @@
       "wins": 12,
       "losses": 5,
       "ties": 0,
-      "points_for": 10284.5,
-      "points_against": 7878.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 3,
       "final_standing": 5,
       "playoff_pct": null,
@@ -101,8 +102,8 @@
       "wins": 9,
       "losses": 8,
       "ties": 0,
-      "points_for": 8433.0,
-      "points_against": 10178.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 5,
       "final_standing": 6,
       "playoff_pct": null,
@@ -127,8 +128,8 @@
       "wins": 8,
       "losses": 9,
       "ties": 0,
-      "points_for": 8887.5,
-      "points_against": 8000.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 7,
       "final_standing": 7,
       "playoff_pct": null,
@@ -153,8 +154,8 @@
       "wins": 12,
       "losses": 5,
       "ties": 0,
-      "points_for": 9521.0,
-      "points_against": 9150.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 1,
       "final_standing": 4,
       "playoff_pct": null,
@@ -179,8 +180,8 @@
       "wins": 12,
       "losses": 5,
       "ties": 0,
-      "points_for": 10030.5,
-      "points_against": 9448.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 4,
       "final_standing": 1,
       "playoff_pct": null,
@@ -205,8 +206,8 @@
       "wins": 10,
       "losses": 7,
       "ties": 0,
-      "points_for": 9646.5,
-      "points_against": 9721.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 2,
       "final_standing": 2,
       "playoff_pct": null,
@@ -231,8 +232,8 @@
       "wins": 4,
       "losses": 13,
       "ties": 0,
-      "points_for": 8388.0,
-      "points_against": 8764.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 9,
       "final_standing": 9,
       "playoff_pct": null,
@@ -257,8 +258,8 @@
       "wins": 6,
       "losses": 11,
       "ties": 0,
-      "points_for": 7797.0,
-      "points_against": 8824.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 8,
       "final_standing": 10,
       "playoff_pct": null,
@@ -271,1319 +272,3321 @@
   ],
   "matchups": [
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 6,
+      "home_team_name": "Canned Heat",
       "home_score": 141.0,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 213.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 10,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 160.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 232.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 4,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 307.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 316.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 8,
+      "home_team_name": "Battleship Yamato",
       "home_score": 224.5,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 236.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 7,
+      "home_team_name": "Team Badussy",
       "home_score": 120.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 226.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 4,
+      "home_team_name": "Team Wallick",
       "home_score": 184.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 228.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 9,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 285.0,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 229.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 6,
+      "home_team_name": "Balls and Wieners",
       "home_score": 434.0,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 379.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 2,
+      "home_team_name": "Battleship Yamato",
       "home_score": 369.5,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 253.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 3,
+      "home_team_name": "Team Badussy",
       "home_score": 238.0,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 254.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 7,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 336.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 379.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 1,
+      "home_team_name": "Team Wallick",
       "home_score": 329.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 239.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 5,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 351.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 343.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 2,
+      "home_team_name": "Canned Heat",
       "home_score": 236.0,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 293.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 3,
+      "home_team_name": "John is lucky",
       "home_score": 330.0,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 365.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 5,
+      "home_team_name": "Battleship Yamato",
       "home_score": 270.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 290.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 8,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 351.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 355.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 7,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 280.5,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 321.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 10,
+      "home_team_name": "Canned Heat",
       "home_score": 303.5,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 267.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 4,
+      "home_team_name": "John is lucky",
       "home_score": 447.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 235.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 3,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 261.0,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 381.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 9,
+      "home_team_name": "Battleship Yamato",
       "home_score": 328.0,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 297.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 6,
+      "home_team_name": "Team Badussy",
       "home_score": 265.5,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 469.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 10,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 362.5,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 325.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 4,
+      "home_team_name": "Balls and Wieners",
       "home_score": 364.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 288.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 10,
+      "home_team_name": "John is lucky",
       "home_score": 327.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 283.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 8,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 275.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 292.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 1,
+      "home_team_name": "Balls and Wieners",
       "home_score": 307.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 331.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 2,
+      "home_team_name": "Team Badussy",
       "home_score": 267.5,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 190.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 9,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 394.5,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 273.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 6,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 385.0,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 295.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 4,
+      "home_team_name": "Battleship Yamato",
       "home_score": 323.5,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 207.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 7,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 284.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 419.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 5,
+      "home_team_name": "Canned Heat",
       "home_score": 353.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 264.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 3,
+      "home_team_name": "Team Wallick",
       "home_score": 258.5,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 337.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 1,
+      "home_team_name": "John is lucky",
       "home_score": 407.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 301.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 2,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 395.0,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 368.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 9,
+      "home_team_name": "Balls and Wieners",
       "home_score": 316.5,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 271.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 10,
+      "home_team_name": "Team Badussy",
       "home_score": 201.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 278.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 8,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 383.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 336.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 6,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 374.0,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 375.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 1,
+      "home_team_name": "Canned Heat",
       "home_score": 335.5,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 305.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 3,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 265.0,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 427.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 8,
+      "home_team_name": "Team Wallick",
       "home_score": 351.5,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 325.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 5,
+      "home_team_name": "Balls and Wieners",
       "home_score": 300.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 217.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 4,
+      "home_team_name": "Canned Heat",
       "home_score": 276.5,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 346.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 2,
+      "home_team_name": "Team Wallick",
       "home_score": 212.0,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 318.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 7,
+      "home_team_name": "John is lucky",
       "home_score": 309.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 275.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 1,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 282.5,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 320.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 5,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 332.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 314.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 7,
+      "home_team_name": "Team Wallick",
       "home_score": 312.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 153.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 8,
+      "home_team_name": "Canned Heat",
       "home_score": 303.5,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 343.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 4,
+      "home_team_name": "Team Badussy",
       "home_score": 376.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 347.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 1,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 256.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 280.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 6,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 295.5,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 399.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 5,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 305.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 385.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 10,
+      "home_team_name": "Battleship Yamato",
       "home_score": 290.5,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 259.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 3,
+      "home_team_name": "Balls and Wieners",
       "home_score": 282.0,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 427.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 9,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 305.0,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 211.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 6,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 280.5,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 306.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 3,
+      "home_team_name": "Battleship Yamato",
       "home_score": 307.0,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 287.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 2,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 310.0,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 240.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 5,
+      "home_team_name": "John is lucky",
       "home_score": 391.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 357.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 9,
+      "home_team_name": "Team Wallick",
       "home_score": 321.5,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 398.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 7,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 446.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 345.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 9,
+      "home_team_name": "John is lucky",
       "home_score": 501.0,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 257.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 10,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 326.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 402.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 8,
+      "home_team_name": "Balls and Wieners",
       "home_score": 418.5,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 260.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 1,
+      "home_team_name": "Team Badussy",
       "home_score": 343.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 327.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 2,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 243.5,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 223.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 6,
+      "home_team_name": "Team Wallick",
       "home_score": 270.5,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 369.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 4,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 344.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 388.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 7,
+      "home_team_name": "Battleship Yamato",
       "home_score": 321.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 359.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 5,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 245.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 318.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 3,
+      "home_team_name": "Canned Heat",
       "home_score": 182.5,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 387.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 8,
+      "home_team_name": "John is lucky",
       "home_score": 486.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 517.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 1,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 543.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 381.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 2,
+      "home_team_name": "Balls and Wieners",
       "home_score": 494.5,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 377.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 9,
+      "home_team_name": "Team Badussy",
       "home_score": 464.5,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 437.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 10,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 468.5,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 312.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 6,
+      "home_team_name": "Battleship Yamato",
       "home_score": 391.0,
+      "away_team_id": 6,
+      "away_team_name": "John is lucky",
       "away_score": 365.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 4,
+      "home_team_name": "Corbin Burnes Blue Balls",
       "home_score": 288.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 356.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 7,
+      "home_team_name": "Canned Heat",
       "home_score": 277.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 322.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 5,
+      "home_team_name": "Team Wallick",
       "home_score": 255.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 332.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 3,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 384.0,
+      "away_team_id": 3,
+      "away_team_name": "FREE PALESTINE",
       "away_score": 341.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": null,
-      "home_score": 228.0,
-      "away_score": 0,
-      "winner": "UNDECIDED"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 7,
-      "away_team_id": 4,
-      "home_score": 354.0,
-      "away_score": 299.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 1,
-      "home_score": 322.0,
-      "away_score": 336.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": null,
-      "home_score": 323.0,
-      "away_score": 0,
-      "winner": "UNDECIDED"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 10,
-      "home_score": 270.0,
-      "away_score": 266.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 9,
-      "away_team_id": 2,
-      "home_score": 278.0,
-      "away_score": 271.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 7,
+      "home_team_name": "John is lucky",
       "home_score": 293.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 295.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 1,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 367.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 359.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 4,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 394.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 220.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 9,
+      "home_team_name": "Team Badussy",
       "home_score": 409.5,
+      "away_team_id": 9,
+      "away_team_name": "Canned Heat",
       "away_score": 241.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 2,
+      "home_team_name": "Team Wallick",
       "home_score": 252.5,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 330.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 7,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 362.0,
+      "away_team_id": 7,
+      "away_team_name": "Balls and Wieners",
       "away_score": 366.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 1,
+      "home_team_name": "John is lucky",
       "home_score": 286.0,
+      "away_team_id": 1,
+      "away_team_name": "Battleship Yamato",
       "away_score": 342.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 4,
+      "home_team_name": "FREE PALESTINE",
       "home_score": 365.5,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 232.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 2,
+      "home_team_name": "Team Badussy",
       "home_score": 311.0,
+      "away_team_id": 2,
+      "away_team_name": "Corbin Burnes Blue Balls",
       "away_score": 216.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 9,
+      "home_team_name": "Team Wallick",
       "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
       "away_team_id": 9,
-      "home_score": 242.5,
+      "away_team_name": "Canned Heat",
       "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 7,
-      "home_score": 362.0,
-      "away_score": 366.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 1,
-      "home_score": 286.0,
-      "away_score": 342.5,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 4,
-      "home_score": 365.5,
-      "away_score": 232.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "away_team_id": 2,
-      "home_score": 311.0,
-      "away_score": 216.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 9,
-      "home_score": 242.5,
-      "away_score": 308.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     }
   ],
-  "draft": []
+  "draft": [
+    {
+      "round": 1,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 1,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 1,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 1,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 1,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 1,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 1,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 1,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 1,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 1,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 2,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 2,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 2,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 2,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 2,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 2,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 2,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 2,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 2,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 2,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 3,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 3,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 3,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 3,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 3,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 3,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 3,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 3,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 3,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 3,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 4,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 4,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 4,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 4,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 4,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 4,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 4,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 4,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 4,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 4,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 5,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 5,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 5,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 5,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 5,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 5,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 5,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 5,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 5,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 5,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 6,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 6,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 6,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 6,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 6,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 6,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 6,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 6,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 6,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 6,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 7,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 7,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 7,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 7,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 7,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 7,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 7,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 7,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 7,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 7,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 8,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 8,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 8,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 8,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 8,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 8,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 8,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 8,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 8,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 8,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 9,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 9,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 9,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 9,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 9,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 9,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 9,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 9,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 9,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 9,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 10,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 10,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 10,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 10,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 10,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 10,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 10,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 10,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 10,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 10,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 11,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 11,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 11,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 11,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 11,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 11,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 11,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 11,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 11,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 11,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 12,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 12,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 12,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 12,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 12,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 12,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 12,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 12,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 12,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 12,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 13,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 13,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 13,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 13,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 13,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 13,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 13,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 13,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 13,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 13,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 14,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 14,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 14,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 14,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 14,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 14,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 14,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 14,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 14,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 14,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 15,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 15,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 15,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 15,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 15,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 15,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 15,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 15,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 15,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 15,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 16,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 16,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 16,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 16,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 16,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 16,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 16,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 16,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 16,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 16,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 17,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 17,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 17,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 17,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 17,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 17,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 17,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 17,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 17,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 17,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 18,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 18,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 18,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 18,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 18,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 18,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 18,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 18,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 18,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 18,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 19,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 19,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 19,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 19,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 19,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 19,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 19,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 19,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 19,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 19,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 20,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 20,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 20,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 20,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 20,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 20,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 20,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 20,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 20,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 20,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 21,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 21,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 21,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 21,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 21,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 21,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 21,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 21,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 21,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 21,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 22,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 22,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 22,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 22,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 22,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 22,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 22,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 22,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 22,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 22,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 23,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 23,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 23,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 23,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 23,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 23,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 23,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 23,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 23,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 23,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 24,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 24,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 24,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 24,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 24,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 24,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 24,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 24,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 24,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 24,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 25,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    },
+    {
+      "round": 25,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 25,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 25,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 25,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 25,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 25,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 25,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 25,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 25,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 26,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Corbin Burnes Blue Balls"
+    },
+    {
+      "round": 26,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 26,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "FREE PALESTINE"
+    },
+    {
+      "round": 26,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 26,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Battleship Yamato"
+    },
+    {
+      "round": 26,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 26,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Balls and Wieners"
+    },
+    {
+      "round": 26,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "John is lucky"
+    },
+    {
+      "round": 26,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 26,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Canned Heat"
+    }
+  ]
 }

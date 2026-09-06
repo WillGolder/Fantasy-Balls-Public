@@ -1,11 +1,12 @@
 {
   "sport": "baseball",
-  "year": 2023,
   "league_id": 1126511192,
+  "year": 2023,
+  "pulled_at": "2026-09-06T15:36:56.908685Z",
   "settings": {
     "name": "Fantasy Balls",
-    "team_count": 10,
-    "playoff_team_count": 6
+    "scoring_type": "H2H_POINTS",
+    "team_count": 10
   },
   "teams": [
     {
@@ -23,8 +24,8 @@
       "wins": 14,
       "losses": 5,
       "ties": 1,
-      "points_for": 9312.5,
-      "points_against": 8131.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 2,
       "final_standing": 3,
       "playoff_pct": null,
@@ -49,8 +50,8 @@
       "wins": 5,
       "losses": 15,
       "ties": 0,
-      "points_for": 8338.5,
-      "points_against": 8463.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 9,
       "final_standing": 7,
       "playoff_pct": null,
@@ -75,8 +76,8 @@
       "wins": 15,
       "losses": 5,
       "ties": 0,
-      "points_for": 10607.5,
-      "points_against": 8859.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 1,
       "final_standing": 1,
       "playoff_pct": null,
@@ -101,8 +102,8 @@
       "wins": 1,
       "losses": 19,
       "ties": 0,
-      "points_for": 7071.0,
-      "points_against": 9192.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 10,
       "final_standing": 10,
       "playoff_pct": null,
@@ -127,8 +128,8 @@
       "wins": 11,
       "losses": 9,
       "ties": 0,
-      "points_for": 9323.0,
-      "points_against": 8582.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 5,
       "final_standing": 5,
       "playoff_pct": null,
@@ -153,8 +154,8 @@
       "wins": 10,
       "losses": 10,
       "ties": 0,
-      "points_for": 8947.5,
-      "points_against": 8737.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 7,
       "final_standing": 9,
       "playoff_pct": null,
@@ -179,8 +180,8 @@
       "wins": 10,
       "losses": 10,
       "ties": 0,
-      "points_for": 9575.0,
-      "points_against": 9862.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 6,
       "final_standing": 2,
       "playoff_pct": null,
@@ -205,8 +206,8 @@
       "wins": 8,
       "losses": 12,
       "ties": 0,
-      "points_for": 8037.5,
-      "points_against": 8859.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 8,
       "final_standing": 8,
       "playoff_pct": null,
@@ -231,8 +232,8 @@
       "wins": 12,
       "losses": 8,
       "ties": 0,
-      "points_for": 8369.5,
-      "points_against": 8938.5,
+      "points_for": null,
+      "points_against": null,
       "standing": 4,
       "final_standing": 4,
       "playoff_pct": null,
@@ -257,8 +258,8 @@
       "wins": 13,
       "losses": 6,
       "ties": 1,
-      "points_for": 8946.0,
-      "points_against": 8903.0,
+      "points_for": null,
+      "points_against": null,
       "standing": 3,
       "final_standing": 6,
       "playoff_pct": null,
@@ -271,1319 +272,3516 @@
   ],
   "matchups": [
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 4,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 602.5,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 479.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 3,
+      "home_team_name": "Team Badussy",
       "home_score": 417.0,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 518.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 10,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 438.5,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 478.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 9,
+      "home_team_name": "Lazy Team Name",
       "home_score": 414.5,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 431.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 1,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 6,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 460.0,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 487.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 10,
+      "home_team_name": "Place  Holder",
       "home_score": 238.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 401.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 1,
+      "home_team_name": "Team Sternly",
       "home_score": 382.0,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 299.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 4,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 308.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 212.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 5,
+      "home_team_name": "Lazy Team Name",
       "home_score": 345.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 257.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 2,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 2,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 286.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 265.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 6,
+      "home_team_name": "Team Sternly",
       "home_score": 347.5,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 298.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 7,
+      "home_team_name": "Place  Holder",
       "home_score": 352.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 358.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 8,
+      "home_team_name": "Team Wallick",
       "home_score": 362.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 196.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 5,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 286.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 250.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 3,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 2,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 194.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 298.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 8,
+      "home_team_name": "Lazy Team Name",
       "home_score": 269.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 330.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 9,
+      "home_team_name": "Team Badussy",
       "home_score": 262.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 302.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 6,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 235.0,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 374.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 3,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 295.0,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 334.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 4,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 10,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 172.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 213.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 2,
+      "home_team_name": "Team Badussy",
       "home_score": 321.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 302.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 1,
+      "home_team_name": "Lazy Team Name",
       "home_score": 248.5,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 373.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 4,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 321.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 237.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 3,
+      "home_team_name": "Team Sternly",
       "home_score": 202.5,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 296.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 5,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 10,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 363.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 338.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 3,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 288.5,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 339.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 9,
+      "home_team_name": "Team Wallick",
       "home_score": 336.5,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 273.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 7,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 322.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 376.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 5,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 277.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 295.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 6,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 1,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 279.0,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 291.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 4,
+      "home_team_name": "Team Sternly",
       "home_score": 333.5,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 249.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 10,
+      "home_team_name": "Lazy Team Name",
       "home_score": 253.5,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 292.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 6,
+      "home_team_name": "Team Badussy",
       "home_score": 296.0,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 321.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 8,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 396.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 289.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 7,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 2,
+      "home_team_name": "Place  Holder",
       "home_score": 302.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 306.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 7,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 297.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 334.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 5,
+      "home_team_name": "Team Wallick",
       "home_score": 396.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 214.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 1,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 317.0,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 346.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 3,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 327.5,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 312.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 8,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 9,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 274.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 300.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 4,
+      "home_team_name": "Team Badussy",
       "home_score": 291.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 194.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 7,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 361.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 366.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 2,
+      "home_team_name": "Team Wallick",
       "home_score": 300.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 304.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 9,
+      "home_team_name": "Place  Holder",
       "home_score": 247.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 275.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 9,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 8,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 358.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 323.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 10,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 335.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 335.0,
-      "winner": "TIE"
+      "winner": "TIE",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 5,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 338.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 403.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 3,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 185.0,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 334.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 8,
+      "home_team_name": "Team Sternly",
       "home_score": 299.5,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 341.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 10,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 7,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 258.5,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 227.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 6,
+      "home_team_name": "Place  Holder",
       "home_score": 436.5,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 334.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 9,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 349.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 270.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 10,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 275.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 368.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 7,
+      "home_team_name": "Team Badussy",
       "home_score": 397.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 263.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 11,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 4,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 265.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 184.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 8,
+      "home_team_name": "Team Sternly",
       "home_score": 321.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 262.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 3,
+      "home_team_name": "Lazy Team Name",
       "home_score": 277.5,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 370.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 2,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 361.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 177.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 1,
+      "home_team_name": "Team Badussy",
       "home_score": 333.5,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 391.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 12,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 4,
+      "home_team_name": "Team Wallick",
       "home_score": 381.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 237.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 2,
+      "home_team_name": "Lazy Team Name",
       "home_score": 384.5,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 347.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 5,
+      "home_team_name": "Team Sternly",
       "home_score": 240.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 296.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 8,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 209.5,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 298.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 1,
+      "home_team_name": "Place  Holder",
       "home_score": 336.0,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 234.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 13,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 6,
+      "home_team_name": "Team Wallick",
       "home_score": 253.0,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 382.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 1,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 478.5,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 511.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 3,
+      "home_team_name": "Team Wallick",
       "home_score": 427.0,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 490.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 9,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 441.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 432.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 7,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 369.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 599.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 14,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 5,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 559.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 601.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 4,
+      "home_team_name": "Place  Holder",
       "home_score": 297.5,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 209.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 10,
+      "home_team_name": "Team Sternly",
       "home_score": 274.5,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 263.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 6,
+      "home_team_name": "Lazy Team Name",
       "home_score": 243.0,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 313.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 8,
+      "home_team_name": "Team Badussy",
       "home_score": 290.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 339.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 15,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 2,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 346.5,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 315.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 9,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 247.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 235.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 7,
+      "home_team_name": "Team Wallick",
       "home_score": 327.5,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 255.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 5,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 305.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 314.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 1,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 212.0,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 216.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 16,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 3,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 223.5,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 310.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 4,
+      "home_team_name": "Lazy Team Name",
       "home_score": 375.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 214.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 10,
+      "home_team_name": "Team Badussy",
       "home_score": 285.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 290.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 6,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 272.0,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 235.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 8,
+      "home_team_name": "Place  Holder",
       "home_score": 465.0,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 374.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 17,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 2,
+      "home_team_name": "Team Sternly",
       "home_score": 389.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 376.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 18,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 5,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 266.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 362.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 18,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 1,
+      "home_team_name": "Team Wallick",
       "home_score": 388.0,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 353.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 18,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 3,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 300.0,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 503.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 18,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 9,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 270.5,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 400.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 18,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 7,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 210.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 246.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 4,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 374.0,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 212.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 10,
+      "home_team_name": "Place  Holder",
       "home_score": 376.0,
+      "away_team_id": 10,
+      "away_team_name": "Team Wallick",
       "away_score": 297.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 9,
-      "away_team_id": 6,
+      "home_team_name": "Team Sternly",
       "home_score": 320.0,
+      "away_team_id": 6,
+      "away_team_name": "Big Bruisers   and PED users",
       "away_score": 250.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 7,
-      "away_team_id": 8,
+      "home_team_name": "Lazy Team Name",
       "home_score": 225.5,
+      "away_team_id": 8,
+      "away_team_name": "Club house  Space cadets",
       "away_score": 286.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 19,
       "scoring_period": null,
       "home_team_id": 5,
-      "away_team_id": 2,
+      "home_team_name": "Team Badussy",
       "home_score": 274.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 268.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 4,
-      "away_team_id": 3,
+      "home_team_name": "Juiced  Balls ",
       "home_score": 349.5,
+      "away_team_id": 3,
+      "away_team_name": "Place  Holder",
       "away_score": 394.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 9,
+      "home_team_name": "Team Wallick",
       "home_score": 398.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 237.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 7,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 221.5,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 354.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 5,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 248.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 260.5,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 20,
       "scoring_period": null,
       "home_team_id": 2,
-      "away_team_id": 1,
+      "home_team_name": "Drippy  Droppers ",
       "home_score": 256.5,
+      "away_team_id": 1,
+      "away_team_name": "Backup  Bullpen Catcher",
       "away_score": 332.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 22,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": null,
-      "home_score": 408.0,
-      "away_score": 0,
-      "winner": "UNDECIDED"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 9,
-      "away_team_id": 5,
-      "home_score": 324.0,
-      "away_score": 300.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 7,
-      "home_score": 295.0,
-      "away_score": 348.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 1,
-      "away_team_id": null,
-      "home_score": 302.5,
-      "away_score": 0,
-      "winner": "UNDECIDED"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 8,
-      "home_score": 320.0,
-      "away_score": 229.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 2,
-      "away_team_id": 4,
-      "home_score": 319.0,
-      "away_score": 247.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 9,
+      "home_team_name": "Place  Holder",
       "home_score": 380.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 361.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 22,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 7,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 262.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 396.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 22,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 5,
+      "home_team_name": "Team Wallick",
       "home_score": 251.5,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 306.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 22,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 2,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 229.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 360.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 22,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 4,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 238.5,
+      "away_team_id": 4,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 201.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 23,
       "scoring_period": null,
       "home_team_id": 3,
-      "away_team_id": 7,
+      "home_team_name": "Place  Holder",
       "home_score": 425.0,
+      "away_team_id": 7,
+      "away_team_name": "Lazy Team Name",
       "away_score": 345.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 23,
       "scoring_period": null,
       "home_team_id": 1,
-      "away_team_id": 9,
+      "home_team_name": "Backup  Bullpen Catcher",
       "home_score": 298.0,
+      "away_team_id": 9,
+      "away_team_name": "Team Sternly",
       "away_score": 202.5,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 23,
       "scoring_period": null,
       "home_team_id": 10,
-      "away_team_id": 5,
+      "home_team_name": "Team Wallick",
       "home_score": 222.0,
+      "away_team_id": 5,
+      "away_team_name": "Team Badussy",
       "away_score": 328.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 23,
       "scoring_period": null,
       "home_team_id": 8,
-      "away_team_id": 2,
+      "home_team_name": "Club house  Space cadets",
       "home_score": 212.0,
+      "away_team_id": 2,
+      "away_team_name": "Drippy  Droppers ",
       "away_score": 243.0,
-      "winner": "AWAY"
+      "winner": "AWAY",
+      "is_playoff": false,
+      "is_consolation": false
     },
     {
-      "matchup_period": null,
+      "matchup_period": 23,
       "scoring_period": null,
       "home_team_id": 6,
-      "away_team_id": 4,
+      "home_team_name": "Big Bruisers   and PED users",
       "home_score": 252.5,
-      "away_score": 215.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 7,
-      "home_score": 425.0,
-      "away_score": 345.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 1,
-      "away_team_id": 9,
-      "home_score": 298.0,
-      "away_score": 202.5,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 5,
-      "home_score": 222.0,
-      "away_score": 328.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 2,
-      "home_score": 212.0,
-      "away_score": 243.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
       "away_team_id": 4,
-      "home_score": 252.5,
+      "away_team_name": "Juiced  Balls ",
       "away_score": 215.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 7,
-      "home_score": 425.0,
-      "away_score": 345.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 1,
-      "away_team_id": 9,
-      "home_score": 298.0,
-      "away_score": 202.5,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 5,
-      "home_score": 222.0,
-      "away_score": 328.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 2,
-      "home_score": 212.0,
-      "away_score": 243.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 4,
-      "home_score": 252.5,
-      "away_score": 215.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 7,
-      "home_score": 425.0,
-      "away_score": 345.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 1,
-      "away_team_id": 9,
-      "home_score": 298.0,
-      "away_score": 202.5,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 5,
-      "home_score": 222.0,
-      "away_score": 328.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 2,
-      "home_score": 212.0,
-      "away_score": 243.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 4,
-      "home_score": 252.5,
-      "away_score": 215.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 7,
-      "home_score": 425.0,
-      "away_score": 345.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 1,
-      "away_team_id": 9,
-      "home_score": 298.0,
-      "away_score": 202.5,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 5,
-      "home_score": 222.0,
-      "away_score": 328.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 2,
-      "home_score": 212.0,
-      "away_score": 243.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 4,
-      "home_score": 252.5,
-      "away_score": 215.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 7,
-      "home_score": 425.0,
-      "away_score": 345.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 1,
-      "away_team_id": 9,
-      "home_score": 298.0,
-      "away_score": 202.5,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 5,
-      "home_score": 222.0,
-      "away_score": 328.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 2,
-      "home_score": 212.0,
-      "away_score": 243.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 4,
-      "home_score": 252.5,
-      "away_score": 215.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 3,
-      "away_team_id": 7,
-      "home_score": 425.0,
-      "away_score": 345.0,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 1,
-      "away_team_id": 9,
-      "home_score": 298.0,
-      "away_score": 202.5,
-      "winner": "HOME"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 10,
-      "away_team_id": 5,
-      "home_score": 222.0,
-      "away_score": 328.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 8,
-      "away_team_id": 2,
-      "home_score": 212.0,
-      "away_score": 243.0,
-      "winner": "AWAY"
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 6,
-      "away_team_id": 4,
-      "home_score": 252.5,
-      "away_score": 215.0,
-      "winner": "HOME"
+      "winner": "HOME",
+      "is_playoff": false,
+      "is_consolation": false
     }
   ],
-  "draft": []
+  "draft": [
+    {
+      "round": 1,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 1,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 1,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 1,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 1,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 1,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 1,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 1,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 1,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 1,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 2,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 2,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 2,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 2,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 2,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 2,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 2,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 2,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 2,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 2,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 3,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 3,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 3,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 3,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 3,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 3,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 3,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 3,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 3,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 3,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 4,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 4,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 4,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 4,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 4,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 4,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 4,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 4,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 4,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 4,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 5,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 5,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 5,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 5,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 5,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 5,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 5,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 5,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 5,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 5,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 6,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 6,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 6,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 6,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 6,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 6,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 6,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 6,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 6,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 6,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 7,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 7,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 7,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 7,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 7,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 7,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 7,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 7,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 7,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 7,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 8,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 8,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 8,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 8,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 8,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 8,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 8,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 8,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 8,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 8,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 9,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 9,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 9,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 9,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 9,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 9,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 9,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 9,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 9,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 9,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 10,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 10,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 10,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 10,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 10,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 10,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 10,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 10,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 10,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 10,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 11,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 11,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 11,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 11,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 11,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 11,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 11,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 11,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 11,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 11,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 12,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 12,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 12,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 12,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 12,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 12,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 12,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 12,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 12,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 12,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 13,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 13,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 13,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 13,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 13,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 13,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 13,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 13,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 13,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 13,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 14,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 14,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 14,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 14,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 14,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 14,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 14,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 14,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 14,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 14,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 15,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 15,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 15,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 15,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 15,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 15,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 15,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 15,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 15,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 15,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 16,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 16,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 16,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 16,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 16,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 16,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 16,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 16,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 16,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 16,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 17,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 17,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 17,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 17,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 17,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 17,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 17,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 17,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 17,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 17,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 18,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 18,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 18,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 18,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 18,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 18,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 18,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 18,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 18,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 18,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 19,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 19,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 19,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 19,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 19,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 19,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 19,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 19,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 19,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 19,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 20,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 20,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 20,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 20,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 20,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 20,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 20,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 20,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 20,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 20,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 21,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 21,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 21,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 21,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 21,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 21,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 21,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 21,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 21,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 21,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 22,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 22,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 22,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 22,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 22,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 22,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 22,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 22,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 22,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 22,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 23,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 23,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 23,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 23,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 23,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 23,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 23,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 23,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 23,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 23,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 24,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 24,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 24,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 24,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 24,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 24,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 24,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 24,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 24,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 24,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 25,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    },
+    {
+      "round": 25,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 25,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 25,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 25,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 25,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 25,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 25,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 25,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 25,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 26,
+      "pick": 1,
+      "overall": null,
+      "player_name": null,
+      "team_id": 1,
+      "team_name": "Backup  Bullpen Catcher"
+    },
+    {
+      "round": 26,
+      "pick": 2,
+      "overall": null,
+      "player_name": null,
+      "team_id": 3,
+      "team_name": "Place  Holder"
+    },
+    {
+      "round": 26,
+      "pick": 3,
+      "overall": null,
+      "player_name": null,
+      "team_id": 7,
+      "team_name": "Lazy Team Name"
+    },
+    {
+      "round": 26,
+      "pick": 4,
+      "overall": null,
+      "player_name": null,
+      "team_id": 2,
+      "team_name": "Drippy  Droppers "
+    },
+    {
+      "round": 26,
+      "pick": 5,
+      "overall": null,
+      "player_name": null,
+      "team_id": 6,
+      "team_name": "Big Bruisers   and PED users"
+    },
+    {
+      "round": 26,
+      "pick": 6,
+      "overall": null,
+      "player_name": null,
+      "team_id": 8,
+      "team_name": "Club house  Space cadets"
+    },
+    {
+      "round": 26,
+      "pick": 7,
+      "overall": null,
+      "player_name": null,
+      "team_id": 4,
+      "team_name": "Juiced  Balls "
+    },
+    {
+      "round": 26,
+      "pick": 8,
+      "overall": null,
+      "player_name": null,
+      "team_id": 5,
+      "team_name": "Team Badussy"
+    },
+    {
+      "round": 26,
+      "pick": 9,
+      "overall": null,
+      "player_name": null,
+      "team_id": 9,
+      "team_name": "Team Sternly"
+    },
+    {
+      "round": 26,
+      "pick": 10,
+      "overall": null,
+      "player_name": null,
+      "team_id": 10,
+      "team_name": "Team Wallick"
+    }
+  ]
 }
