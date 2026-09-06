@@ -1211,6 +1211,180 @@ export function lookupNickname(displayName: string): string | undefined {
   return undefined;
 }
 
+export type PlayoffRecord = {
+  displayName: string;
+  wins: number;
+  losses: number;
+  ties: number;
+  games: number;
+  appearances: number;
+  titleWins: number;
+  titleLosses: number;
+};
+
+function playoffResult(
+  m: SeasonData["matchups"][number]
+): "home" | "away" | "tie" | null {
+  const winnerFlag = String(m.winner || "").toUpperCase();
+  if (winnerFlag === "UNDECIDED" || winnerFlag === "PENDING" || winnerFlag === "SCHEDULED") {
+    return null;
+  }
+  if (m.home_team_id == null || m.away_team_id == null) return null;
+  if (m.home_score != null && m.away_score != null) {
+    if (m.home_score > m.away_score) return "home";
+    if (m.away_score > m.home_score) return "away";
+    return "tie";
+  }
+  if (winnerFlag === "HOME") return "home";
+  if (winnerFlag === "AWAY") return "away";
+  if (winnerFlag === "TIE") return "tie";
+  return null;
+}
+
+export function getPlayoffRecords(sport?: "football" | "baseball"): PlayoffRecord[] {
+  const seasons = sport ? getAllSeasons(sport) : getAllSeasonsCombined();
+  const champs = getChampionshipHistory();
+  const map = new Map<string, PlayoffRecord>();
+
+  function rec(name: string): PlayoffRecord {
+    if (!map.has(name)) {
+      map.set(name, {
+        displayName: name,
+        wins: 0,
+        losses: 0,
+        ties: 0,
+        games: 0,
+        appearances: 0,
+        titleWins: 0,
+        titleLosses: 0,
+      });
+    }
+    return map.get(name)!;
+  }
+
+  for (const season of seasons) {
+    const appeared = new Set<string>();
+    const champ = champs.find(
+      (c) => c.sport === season.sport && c.year === season.year
+    );
+    const teamOwner = new Map<number, string>();
+    for (const t of season.teams) teamOwner.set(t.team_id, ownerDisplayName(t));
+
+    for (const m of season.matchups) {
+      const flagged = (m as { is_playoff?: boolean }).is_playoff;
+      const consolation = (m as { is_consolation?: boolean }).is_consolation;
+      if (!flagged || consolation) continue;
+      const result = playoffResult(m);
+      if (!result) continue;
+      const homeName = teamOwner.get(m.home_team_id as number);
+      const awayName = teamOwner.get(m.away_team_id as number);
+      if (!homeName || !awayName) continue;
+
+      appeared.add(homeName);
+      appeared.add(awayName);
+      const hr = rec(homeName);
+      const ar = rec(awayName);
+      hr.games += 1;
+      ar.games += 1;
+      if (result === "tie") {
+        hr.ties += 1;
+        ar.ties += 1;
+      } else if (result === "home") {
+        hr.wins += 1;
+        ar.losses += 1;
+      } else {
+        ar.wins += 1;
+        hr.losses += 1;
+      }
+
+      if (
+        champ &&
+        ((homeName === champ.championOwner && awayName === champ.runnerUpOwner) ||
+          (awayName === champ.championOwner && homeName === champ.runnerUpOwner))
+      ) {
+        if (result === "home") {
+          if (homeName === champ.championOwner) rec(homeName).titleWins += 1;
+          else rec(homeName).titleLosses += 1;
+        } else if (result === "away") {
+          if (awayName === champ.championOwner) rec(awayName).titleWins += 1;
+          else rec(awayName).titleLosses += 1;
+        }
+      }
+    }
+    for (const name of appeared) rec(name).appearances += 1;
+  }
+
+  return [...map.values()].sort((a, b) => b.wins - a.wins || b.games - a.games);
+}
+
+export function getOwnerPlayoffRecord(displayName: string): PlayoffRecord {
+  return (
+    getPlayoffRecords().find((r) => r.displayName === displayName) || {
+      displayName,
+      wins: 0,
+      losses: 0,
+      ties: 0,
+      games: 0,
+      appearances: 0,
+      titleWins: 0,
+      titleLosses: 0,
+    }
+  );
+}
+
+export function getSeasonPlayoffRows(
+  sport: "football" | "baseball",
+  year: number
+): PlayoffRecord[] {
+  const season = getSeasonData(sport, year);
+  if (!season) return [];
+  const teamOwner = new Map<number, string>();
+  for (const t of season.teams) teamOwner.set(t.team_id, ownerDisplayName(t));
+  const map = new Map<string, PlayoffRecord>();
+  function rec(name: string): PlayoffRecord {
+    if (!map.has(name)) {
+      map.set(name, {
+        displayName: name,
+        wins: 0,
+        losses: 0,
+        ties: 0,
+        games: 0,
+        appearances: 0,
+        titleWins: 0,
+        titleLosses: 0,
+      });
+    }
+    return map.get(name)!;
+  }
+  for (const m of season.matchups) {
+    const flagged = (m as { is_playoff?: boolean }).is_playoff;
+    const consolation = (m as { is_consolation?: boolean }).is_consolation;
+    if (!flagged || consolation) continue;
+    const result = playoffResult(m);
+    if (!result) continue;
+    const homeName = teamOwner.get(m.home_team_id as number);
+    const awayName = teamOwner.get(m.away_team_id as number);
+    if (!homeName || !awayName) continue;
+    const hr = rec(homeName);
+    const ar = rec(awayName);
+    hr.games += 1;
+    ar.games += 1;
+    hr.appearances = 1;
+    ar.appearances = 1;
+    if (result === "tie") {
+      hr.ties += 1;
+      ar.ties += 1;
+    } else if (result === "home") {
+      hr.wins += 1;
+      ar.losses += 1;
+    } else {
+      ar.wins += 1;
+      hr.losses += 1;
+    }
+  }
+  return [...map.values()].sort((a, b) => b.wins - a.wins || b.games - a.games);
+}
+
 export function ordinal(n: number): string {
   const abs = Math.abs(n);
   const mod100 = abs % 100;

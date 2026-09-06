@@ -8,6 +8,7 @@ import {
   lookupBio,
   lookupNickname,
   managerPhotoUrl,
+  getOwnerPlayoffRecord,
 } from "@/lib/data";
 
 export default function ManagersPage() {
@@ -36,6 +37,7 @@ export default function ManagersPage() {
           const about = lookupBio(m.displayName);
           const joined = getYearJoined(m.displayName);
           const rival = getBiggestRival(m.displayName);
+          const po = getOwnerPlayoffRecord(m.displayName);
 
           return (
             <div
@@ -138,7 +140,7 @@ export default function ManagersPage() {
               </div>
 
               {/* Stats */}
-              <div className="mt-4 grid grid-cols-3 gap-2 text-center text-sm">
+              <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-sm">
                 <div className="rounded-lg bg-[#121018] py-2">
                   <p className="text-[var(--muted)] text-xs">Record</p>
                   <p className="font-semibold tabular-nums">
@@ -149,6 +151,14 @@ export default function ManagersPage() {
                 <div className="rounded-lg bg-[#121018] py-2">
                   <p className="text-[var(--muted)] text-xs">Win %</p>
                   <p className="font-semibold tabular-nums">{winPct}%</p>
+                </div>
+                <div className="rounded-lg bg-[#121018] py-2">
+                  <p className="text-[var(--muted)] text-xs">Playoffs</p>
+                  <p className="font-semibold tabular-nums">
+                    {po.games
+                      ? `${po.wins}–${po.losses}${po.ties ? `–${po.ties}` : ""}`
+                      : "—"}
+                  </p>
                 </div>
                 <div className="rounded-lg bg-[#121018] py-2">
                   <p className="text-[var(--muted)] text-xs">Titles</p>

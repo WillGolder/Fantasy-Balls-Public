@@ -3,6 +3,7 @@ import {
   getCombinedOwnerCareerStats,
   getHeadToHeadRecordsDetailed,
   getOwnerTrophies,
+  getOwnerPlayoffRecord,
 } from "@/lib/data";
 import { siteName } from "@/lib/owners";
 import { AllTimeClient } from "./AllTimeClient";
@@ -27,6 +28,9 @@ export default function AllTimePage() {
       diff: o.pointsFor - o.pointsAgainst,
       titles: o.championships,
       divisions: getOwnerTrophies(o.displayName).divisions.length,
+      playoffW: getOwnerPlayoffRecord(o.displayName).wins,
+      playoffL: getOwnerPlayoffRecord(o.displayName).losses,
+      playoffT: getOwnerPlayoffRecord(o.displayName).ties,
     };
   });
 

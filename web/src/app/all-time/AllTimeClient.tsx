@@ -15,6 +15,9 @@ type Standing = {
   diff: number;
   titles: number;
   divisions: number;
+  playoffW: number;
+  playoffL: number;
+  playoffT: number;
 };
 
 type Props = {
@@ -96,6 +99,16 @@ export function AllTimeClient({ standings, names, recordMap }: Props) {
       align: "right",
       sortValue: (r) => r.divisions,
       render: (r) => r.divisions,
+    },
+    {
+      key: "playoffs",
+      label: "Playoffs",
+      align: "right",
+      sortValue: (r) => r.playoffW - r.playoffL,
+      render: (r) =>
+        r.playoffW + r.playoffL + r.playoffT > 0
+          ? `${r.playoffW}–${r.playoffL}${r.playoffT ? `–${r.playoffT}` : ""}`
+          : "—",
     },
   ];
 

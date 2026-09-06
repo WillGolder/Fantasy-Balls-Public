@@ -4,7 +4,9 @@ import {
   getSeasonData,
   getTeamSeasonAdvanced,
   getAvailableYears,
+  getSeasonPlayoffRows,
 } from "@/lib/data";
+import { siteName } from "@/lib/owners";
 import { SeasonStandings } from "@/components/SeasonStandings";
 import { SeasonAdvancedTable } from "@/components/SeasonAdvancedTable";
 import type { SeasonData } from "@/lib/data";
@@ -46,6 +48,7 @@ export default async function FootballSeasonPage({
   const year = parseInt(yearStr, 10);
   const season = getSeasonData("football", year);
   if (!season) notFound();
+  const playoffs = getSeasonPlayoffRows("football", year);
   const advanced = getTeamSeasonAdvanced("football", year).sort(
     (a, b) => b.ppg - a.ppg
   );
@@ -76,6 +79,43 @@ export default async function FootballSeasonPage({
           ))
         ) : (
           <SeasonStandings season={season} />
+        )}
+      </section>
+
+
+      <section className="space-y-3">
+        <h2 className="section-title">
+          Playoff <span>Record</span>
+        </h2>
+        {playoffs.length === 0 ? (
+          <p className="text-sm text-[var(--muted)]">
+            No playoff games flagged in this archive yet.
+          </p>
+        ) : (
+          <div className="card overflow-x-auto">
+            <table className="data-table">
+              <thead>
+                <tr>
+                  <th>Manager</th>
+                  <th className="num">W</th>
+                  <th className="num">L</th>
+                  <th className="num">T</th>
+                  <th className="num">Games</th>
+                </tr>
+              </thead>
+              <tbody>
+                {playoffs.map((r) => (
+                  <tr key={r.displayName}>
+                    <td>{siteName(r.displayName)}</td>
+                    <td className="num">{r.wins}</td>
+                    <td className="num">{r.losses}</td>
+                    <td className="num">{r.ties}</td>
+                    <td className="num">{r.games}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
       </section>
 

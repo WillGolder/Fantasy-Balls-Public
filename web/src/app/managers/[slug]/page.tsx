@@ -12,6 +12,7 @@ import {
   getOwnerSeasonLog,
   getHeadToHeadRecordsDetailed,
   managerPhotoUrl,
+  getOwnerPlayoffRecord,
 } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -40,6 +41,7 @@ export default async function ManagerProfilePage({
   );
   const total = m.wins + m.losses + m.ties;
   const winPct = total > 0 ? (m.wins / total) * 100 : 0;
+  const po = getOwnerPlayoffRecord(m.displayName);
 
   return (
     <div className="space-y-10">
@@ -74,6 +76,34 @@ export default async function ManagerProfilePage({
             className="manager-photo w-24 h-24"
           />
         )}
+      </div>
+
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-sm">
+        <div className="card py-3">
+          <p className="text-[var(--muted)] text-xs">Record</p>
+          <p className="font-semibold tabular-nums">
+            {m.wins}-{m.losses}
+            {m.ties ? `-${m.ties}` : ""}
+          </p>
+        </div>
+        <div className="card py-3">
+          <p className="text-[var(--muted)] text-xs">Win %</p>
+          <p className="font-semibold tabular-nums">{winPct.toFixed(1)}%</p>
+        </div>
+        <div className="card py-3">
+          <p className="text-[var(--muted)] text-xs">Playoffs</p>
+          <p className="font-semibold tabular-nums">
+            {po.games
+              ? `${po.wins}–${po.losses}${po.ties ? `–${po.ties}` : ""}`
+              : "—"}
+          </p>
+        </div>
+        <div className="card py-3">
+          <p className="text-[var(--muted)] text-xs">Titles</p>
+          <p className="font-semibold tabular-nums text-[var(--gold)]">
+            {m.championships}
+          </p>
+        </div>
       </div>
 
       {about && (
