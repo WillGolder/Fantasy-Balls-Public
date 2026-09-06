@@ -1267,13 +1267,47 @@ function baseballPlayoffCutoff(season: SeasonData): number | null {
   return max - 2; // last 3 periods inclusive
 }
 
+function baseballPlayoffField(season: SeasonData): Set<number> {
+  const n = season.settings?.playoff_team_count || 6;
+  const withRank = season.teams.filter(
+    (t) => t.final_standing != null && t.final_standing > 0
+  );
+  if (withRank.length >= n) {
+    return new Set(
+      withRank.filter((t) => (t.final_standing || 99) <= n).map((t) => t.team_id)
+    );
+  }
+  return new Set(
+    [...season.teams]
+      .sort((a, b) => {
+        const ag = (a.wins || 0) + (a.losses || 0) + (a.ties || 0);
+        const bg = (b.wins || 0) + (b.losses || 0) + (b.ties || 0);
+        const ap = ag > 0 ? (a.wins || 0) / ag : 0;
+        const bp = bg > 0 ? (b.wins || 0) / bg : 0;
+        if (bp !== ap) return bp - ap;
+        return (b.points_for || 0) - (a.points_for || 0);
+      })
+      .slice(0, n)
+      .map((t) => t.team_id)
+  );
+}
+
 function isPlayoffMatchup(season: SeasonData, m: SeasonData["matchups"][number]): boolean {
   if ((m as { is_consolation?: boolean }).is_consolation) return false;
-  if ((m as { is_playoff?: boolean }).is_playoff) return true;
-  if (season.sport !== "baseball") return false;
+  if (m.away_team_id == null || m.home_team_id == null) return false;
+  if (m.home_score === 0 && (m.away_score === 0 || m.away_score == null)) return false;
+
+  if (season.sport === "football") {
+    if (!Boolean((m as { is_playoff?: boolean }).is_playoff)) return false;
+    const field = baseballPlayoffField(season);
+    return field.has(m.home_team_id) && field.has(m.away_team_id);
+  }
+
   const cutoff = baseballPlayoffCutoff(season);
   if (cutoff == null || typeof m.matchup_period !== "number") return false;
-  return m.matchup_period >= cutoff;
+  if (m.matchup_period < cutoff) return false;
+  const field = baseballPlayoffField(season);
+  return field.has(m.home_team_id) && field.has(m.away_team_id);
 }
 
 function playoffResult(
