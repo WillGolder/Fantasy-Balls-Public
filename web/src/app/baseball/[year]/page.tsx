@@ -6,6 +6,7 @@ import {
   getAvailableYears,
 } from "@/lib/data";
 import { SeasonStandings } from "@/components/SeasonStandings";
+import { SeasonAdvancedTable } from "@/components/SeasonAdvancedTable";
 import type { SeasonData } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -82,45 +83,10 @@ export default async function BaseballSeasonPage({
         <h2 className="section-title">
           Advanced <span>Stats</span>
         </h2>
-        <p className="text-xs text-[var(--muted)]">Full league (all divisions combined).</p>
-        <div className="card overflow-x-auto">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Team</th>
-                <th>Owner</th>
-                <th className="num">PPG</th>
-                <th className="num">PAPG</th>
-                <th className="num">Diff</th>
-                <th className="num">Best</th>
-                <th className="num">Worst</th>
-                <th className="num">W Streak</th>
-                <th className="num">L Streak</th>
-                <th className="num">SoS</th>
-                <th className="num">Close W-L</th>
-              </tr>
-            </thead>
-            <tbody>
-              {advanced.map((t) => (
-                <tr key={t.teamId}>
-                  <td className="font-medium">{t.teamName}</td>
-                  <td className="text-[var(--muted)]">{t.ownerName}</td>
-                  <td className="num">{t.ppg.toFixed(1)}</td>
-                  <td className="num">{t.papg.toFixed(1)}</td>
-                  <td className="num">{t.diff.toFixed(0)}</td>
-                  <td className="num">{t.bestWeek?.toFixed(0) ?? "—"}</td>
-                  <td className="num">{t.worstWeek?.toFixed(0) ?? "—"}</td>
-                  <td className="num">{t.longestWinStreak}</td>
-                  <td className="num">{t.longestLossStreak}</td>
-                  <td className="num">{(t.sos * 100).toFixed(0)}%</td>
-                  <td className="num">
-                    {t.closeWins}–{t.closeLosses}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <p className="text-xs text-[var(--muted)]">
+          Full league (all divisions combined). Click a column header to sort.
+        </p>
+        <SeasonAdvancedTable rows={advanced} />
       </section>
 
       <p className="flex gap-4 text-sm">

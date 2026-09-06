@@ -235,14 +235,18 @@ def pull_baseball_season(year: int) -> dict:
 
 
 def save_season(data: dict, sport: str):
-    """Save a season's data to a JSON file."""
+    """Save a season's data to a JSON file (repo data/ and Next.js web/data/)."""
     year = data["year"]
-    out_dir = OUTPUT_DIR / sport
-    out_dir.mkdir(parents=True, exist_ok=True)
-    path = out_dir / f"{year}.json"
-    with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-    print(f"    Saved → {path}")
+    targets = [
+        OUTPUT_DIR / sport,
+        Path(__file__).parent.parent / "web" / "data" / sport,
+    ]
+    for out_dir in targets:
+        out_dir.mkdir(parents=True, exist_ok=True)
+        path = out_dir / f"{year}.json"
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        print(f"    Saved → {path}")
 
 
 def main():
