@@ -1,18 +1,20 @@
-# Runs on a schedule. If ESPN cookies are missing or expired, the job fails
-# WITHOUT deleting existing JSON — the live site keeps the last archive.
+# Runs on a schedule. If ESPN cookies are missing or expired, the job
+# leaves existing JSON in place so the live site does not go blank.
 name: Refresh current ESPN season
 on:
   schedule:
-    # Tuesday 11:00 UTC (~7am ET) football
     - cron: "0 11 * * 2"
-    # Monday 11:00 UTC baseball
     - cron: "0 11 * * 1"
   workflow_dispatch: {}
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -35,4 +37,6 @@ jobs:
           git add web/data data || true
           git diff --cached --quiet && echo "No data changes" && exit 0
           git commit -m "chore: refresh ESPN archives"
-          git push || echo "Push skipped"
+          git pull --rebase origin main
+          git push
+          echo "Pushed archive refresh"
