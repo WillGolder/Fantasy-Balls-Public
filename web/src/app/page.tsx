@@ -1,13 +1,14 @@
 import Link from "next/link";
+import { HomeQuote } from "@/components/HomeQuote";
 import {
   getAvailableYears,
   getSeasonData,
   getReigningChampion,
   getAllTimeWinPctLeaders,
-  getRandomQuote,
-  getCombinedOwnerCareerStats,
+    getCombinedOwnerCareerStats,
   getLeagueConfig,
   ownerDisplayName,
+  getAllQuotes,
 } from "@/lib/data";
 import { siteName } from "@/lib/owners";
 import { DraftCountdown } from "@/components/DraftCountdown";
@@ -20,7 +21,7 @@ export default function HomePage() {
   const fbChamp = getReigningChampion("football");
   const bbChamp = getReigningChampion("baseball");
   const { best, worst, minSeasons } = getAllTimeWinPctLeaders();
-  const quote = getRandomQuote();
+  const quotes = getAllQuotes();
   const topManagers = getCombinedOwnerCareerStats().slice(0, 7);
   const config = getLeagueConfig();
   const fb2026 = getSeasonData("football", 2026);
@@ -74,20 +75,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Quote */}
-      <section className="section-band px-4 py-4 border-b border-[#2a2834]">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--gold)] mb-1">
-            From the Group Chat
-          </p>
-          <p className="text-base sm:text-lg font-medium leading-snug">
-            “{quote.text}”
-          </p>
-          {quote.by && (
-            <p className="text-sm text-[var(--muted)] mt-1">— {quote.by}</p>
-          )}
-        </div>
-      </section>
+      <HomeQuote quotes={quotes} />
 
       {/* Featured banners */}
       <section className="px-4 py-8 border-b border-[#2a2834]">

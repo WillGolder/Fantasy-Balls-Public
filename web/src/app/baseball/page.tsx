@@ -36,9 +36,15 @@ export default function BaseballPage() {
           return (
             <div key={year} className="space-y-3">
               <h3 className="text-lg font-semibold flex items-center gap-2">
-                {year}
+                <Link href={`/baseball/${year}`} className="text-[var(--gold)] hover:underline">
+                  {year}
+                </Link>
                 <span className="text-sm font-normal text-[var(--muted)]">
                   · {season.teams.length} teams
+                  {" · "}
+                  <Link href={`/baseball/${year}`} className="hover:underline">
+                    advanced stats →
+                  </Link>
                 </span>
               </h3>
               <SeasonStandings season={season} />
