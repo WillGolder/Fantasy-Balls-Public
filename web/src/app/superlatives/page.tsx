@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getSuperlatives, getMinSeasonsForAllTime, getAllSeasons, ownerDisplayName, ordinal } from "@/lib/data";
+import { getSuperlatives, getMinSeasonsForAllTime, getAllSeasons, ownerDisplayName, ordinal, teamPointsFor } from "@/lib/data";
 import { siteName } from "@/lib/owners";
 
 export default function SuperlativesPage() {
@@ -11,7 +11,7 @@ export default function SuperlativesPage() {
     let best: { name: string; year: number; pf: number } | null = null;
     for (const season of getAllSeasons(sport)) {
       for (const t of season.teams) {
-        const pf = t.points_for || 0;
+        const pf = teamPointsFor(season, t);
         if (!pf) continue;
         if (!best || pf > best.pf) {
           best = { name: siteName(ownerDisplayName(t)), year: season.year, pf };

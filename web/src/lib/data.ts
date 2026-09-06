@@ -48,6 +48,42 @@ export function getAllSeasonsCombined(): SeasonData[] {
   );
 }
 
+/** Sum matchup scores when ESPN omitted team.points_for (common in baseball). */
+export function teamSeasonPoints(
+  season: SeasonData,
+  teamId: number
+): { pf: number; pa: number } {
+  let pf = 0;
+  let pa = 0;
+  let counted = false;
+  for (const m of season.matchups) {
+    const winnerFlag = String(m.winner || "").toUpperCase();
+    if (winnerFlag === "UNDECIDED" || winnerFlag === "PENDING" || winnerFlag === "SCHEDULED") {
+      continue;
+    }
+    if (m.home_team_id === teamId && m.home_score != null) {
+      pf += m.home_score;
+      if (m.away_score != null) pa += m.away_score;
+      counted = true;
+    } else if (m.away_team_id === teamId && m.away_score != null) {
+      pf += m.away_score;
+      if (m.home_score != null) pa += m.home_score;
+      counted = true;
+    }
+  }
+  return { pf, pa, counted } as { pf: number; pa: number };
+}
+
+export function teamPointsFor(season: SeasonData, team: SeasonData["teams"][number]): number {
+  if (team.points_for != null && team.points_for > 0) return team.points_for;
+  return teamSeasonPoints(season, team.team_id).pf;
+}
+
+export function teamPointsAgainst(season: SeasonData, team: SeasonData["teams"][number]): number {
+  if (team.points_against != null && team.points_against > 0) return team.points_against;
+  return teamSeasonPoints(season, team.team_id).pa;
+}
+
 /** Career stats for a single sport */
 export function getOwnerCareerStats(sport: "football" | "baseball"): OwnerCareer[] {
   const seasons = getAllSeasons(sport);
@@ -84,8 +120,8 @@ export function getOwnerCareerStats(sport: "football" | "baseball"): OwnerCareer
       rec.wins += team.wins || 0;
       rec.losses += team.losses || 0;
       rec.ties += team.ties || 0;
-      rec.pointsFor += team.points_for || 0;
-      rec.pointsAgainst += team.points_against || 0;
+      rec.pointsFor += teamPointsFor(season, team);
+      rec.pointsAgainst += teamPointsAgainst(season, team);
 
       if (sport === "football") {
         rec.footballSeasons += 1;
@@ -721,7 +757,7 @@ export function getLastPlaceHistory(): {
         year: season.year,
         teamName: last.team_name,
         ownerName: ownerDisplayName(last),
-        pointsFor: last.points_for ?? null,
+        pointsFor: teamPointsFor(season, last) || last.points_for || null,
       });
     }
   }
@@ -1169,7 +1205,7 @@ export function getOwnerSeasonLog(displayName: string) {
           wins: t.wins,
           losses: t.losses,
           ties: t.ties || 0,
-          pointsFor: t.points_for ?? null,
+          pointsFor: teamPointsFor(season, t) || t.points_for || null,
           finalStanding: t.final_standing ?? null,
           divisionName: t.division_name || null,
         });
@@ -1222,6 +1258,24 @@ export type PlayoffRecord = {
   titleLosses: number;
 };
 
+function baseballPlayoffCutoff(season: SeasonData): number | null {
+  const periods = season.matchups
+    .map((m) => m.matchup_period)
+    .filter((p): p is number => typeof p === "number");
+  if (!periods.length) return null;
+  const max = Math.max(...periods);
+  return max - 2; // last 3 periods inclusive
+}
+
+function isPlayoffMatchup(season: SeasonData, m: SeasonData["matchups"][number]): boolean {
+  if ((m as { is_consolation?: boolean }).is_consolation) return false;
+  if ((m as { is_playoff?: boolean }).is_playoff) return true;
+  if (season.sport !== "baseball") return false;
+  const cutoff = baseballPlayoffCutoff(season);
+  if (cutoff == null || typeof m.matchup_period !== "number") return false;
+  return m.matchup_period >= cutoff;
+}
+
 function playoffResult(
   m: SeasonData["matchups"][number]
 ): "home" | "away" | "tie" | null {
@@ -1271,9 +1325,7 @@ export function getPlayoffRecords(sport?: "football" | "baseball"): PlayoffRecor
     for (const t of season.teams) teamOwner.set(t.team_id, ownerDisplayName(t));
 
     for (const m of season.matchups) {
-      const flagged = (m as { is_playoff?: boolean }).is_playoff;
-      const consolation = (m as { is_consolation?: boolean }).is_consolation;
-      if (!flagged || consolation) continue;
+      if (!isPlayoffMatchup(season, m)) continue;
       const result = playoffResult(m);
       if (!result) continue;
       const homeName = teamOwner.get(m.home_team_id as number);
