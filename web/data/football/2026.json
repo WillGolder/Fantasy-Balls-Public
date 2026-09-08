@@ -2,7 +2,7 @@
   "sport": "football",
   "league_id": 225969362,
   "year": 2026,
-  "pulled_at": "2026-09-07T11:04:13.221223Z",
+  "pulled_at": "2026-09-08T11:04:07.470137Z",
   "settings": {
     "name": "Fantasy Balls",
     "scoring_type": "H2H_POINTS",
@@ -170,8 +170,8 @@
     },
     {
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!",
-      "team_abbrev": "CHK",
+      "team_name": "Mevis and Butthead",
+      "team_abbrev": "MB",
       "owners": [
         {
           "displayName": "Andy Hines",
@@ -333,7 +333,7 @@
       "home_team_name": "Brown Flowers in my Fannin",
       "home_score": 0.0,
       "away_team_id": 7,
-      "away_team_name": "Hunter? I hardly know 'er!",
+      "away_team_name": "Mevis and Butthead",
       "away_score": 0.0,
       "winner": null,
       "is_playoff": false,
@@ -411,7 +411,7 @@
       "player_name": "Amon-Ra St. Brown",
       "player_id": 4374302,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 1,
@@ -456,7 +456,7 @@
       "player_name": "Saquon Barkley",
       "player_id": 3929630,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 2,
@@ -591,7 +591,7 @@
       "player_name": "Jalen Hurts",
       "player_id": 4040715,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 3,
@@ -636,7 +636,7 @@
       "player_name": "Tetairoa McMillan",
       "player_id": 4685472,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 4,
@@ -771,7 +771,7 @@
       "player_name": "Rhamondre Stevenson",
       "player_id": 4569173,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 5,
@@ -816,7 +816,7 @@
       "player_name": "Jameson Williams",
       "player_id": 4426388,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 6,
@@ -951,7 +951,7 @@
       "player_name": "Tony Pollard",
       "player_id": 3916148,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 7,
@@ -996,7 +996,7 @@
       "player_name": "Jordan Addison",
       "player_id": 4429205,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 8,
@@ -1131,7 +1131,7 @@
       "player_name": "Colston Loveland",
       "player_id": 4723086,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 9,
@@ -1176,7 +1176,7 @@
       "player_name": "Kyle Monangai",
       "player_id": 4608686,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 10,
@@ -1311,7 +1311,7 @@
       "player_name": "George Kittle",
       "player_id": 3040151,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 11,
@@ -1356,7 +1356,7 @@
       "player_name": "Jalen Coker",
       "player_id": 4695883,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 12,
@@ -1491,7 +1491,7 @@
       "player_name": "Harrison Mevis",
       "player_id": 4574716,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 13,
@@ -1536,7 +1536,7 @@
       "player_name": "Austin McNamara",
       "player_id": 4427982,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 14,
@@ -1671,7 +1671,7 @@
       "player_name": "Travis Hunter",
       "player_id": 4685415,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 15,
@@ -1716,7 +1716,7 @@
       "player_name": "Hunter Henry",
       "player_id": 3046439,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 16,
@@ -1851,7 +1851,7 @@
       "player_name": "Jared Goff",
       "player_id": 3046779,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 17,
@@ -1896,7 +1896,7 @@
       "player_name": "Patriots D/ST",
       "player_id": -16017,
       "team_id": 7,
-      "team_name": "Hunter? I hardly know 'er!"
+      "team_name": "Mevis and Butthead"
     },
     {
       "round": 18,
