@@ -1471,6 +1471,220 @@ export function getSeasonPlayoffRows(
   return [...map.values()].sort((a, b) => b.wins - a.wins || b.games - a.games);
 }
 
+
+export type AllPlayCell = { wins: number; losses: number; ties: number };
+export type AllPlayRow = {
+  teamId: number;
+  teamName: string;
+  ownerName: string;
+  weeks: Record<number, AllPlayCell>;
+  total: AllPlayCell;
+};
+
+export function getAllPlayTable(
+  sport: "football" | "baseball",
+  year: number
+): { weeks: number[]; rows: AllPlayRow[] } {
+  const season = getSeasonData(sport, year);
+  if (!season) return { weeks: [], rows: [] };
+
+  const gamesPerWeek = Math.max(1, Math.floor(season.teams.length / 2));
+  const byWeek = new Map<number, { id: number; score: number }[]>();
+
+  const dated = season.matchups.some(
+    (m) => m.matchup_period != null || m.scoring_period != null
+  );
+
+  if (dated) {
+    for (const m of season.matchups) {
+      const w = (m.matchup_period ?? m.scoring_period) as number;
+      if (w == null) continue;
+      const flag = String(m.winner || "").toUpperCase();
+      if (flag === "UNDECIDED" || flag === "PENDING" || flag === "SCHEDULED") continue;
+      if (!byWeek.has(w)) byWeek.set(w, []);
+      const list = byWeek.get(w)!;
+      if (m.home_team_id != null && m.home_score != null) list.push({ id: m.home_team_id, score: m.home_score });
+      if (m.away_team_id != null && m.away_score != null) list.push({ id: m.away_team_id, score: m.away_score });
+    }
+  } else {
+    let week = 1;
+    let bucket: { id: number; score: number }[] = [];
+    const seen = new Set<number>();
+    for (const m of season.matchups) {
+      if (m.home_team_id == null || m.away_team_id == null) continue;
+      if (seen.has(m.home_team_id) || seen.size >= season.teams.length) {
+        if (bucket.some((s) => s.score !== 0)) byWeek.set(week, bucket);
+        week += 1;
+        bucket = [];
+        seen.clear();
+      }
+      seen.add(m.home_team_id);
+      if (m.away_team_id != null) seen.add(m.away_team_id);
+      if (m.home_score != null) bucket.push({ id: m.home_team_id, score: m.home_score });
+      if (m.away_team_id != null && m.away_score != null) bucket.push({ id: m.away_team_id, score: m.away_score });
+      if (seen.size >= season.teams.length || bucket.length >= season.teams.length) {
+        if (bucket.some((s) => s.score !== 0)) byWeek.set(week, bucket);
+        week += 1;
+        bucket = [];
+        seen.clear();
+      }
+    }
+    if (bucket.some((s) => s.score !== 0)) byWeek.set(week, bucket);
+  }
+
+  const weeks = [...byWeek.keys()].sort((a, b) => a - b).filter((w) => {
+    const scores = byWeek.get(w) || [];
+    return scores.some((s) => s.score !== 0);
+  });
+
+  const rows: AllPlayRow[] = season.teams.map((t) => ({
+    teamId: t.team_id,
+    teamName: t.team_name,
+    ownerName: ownerDisplayName(t),
+    weeks: {},
+    total: { wins: 0, losses: 0, ties: 0 },
+  }));
+  const byId = new Map(rows.map((r) => [r.teamId, r]));
+
+  for (const w of weeks) {
+    const scores = byWeek.get(w) || [];
+    const latest = new Map<number, number>();
+    for (const s of scores) latest.set(s.id, s.score);
+    const entries = [...latest.entries()];
+    for (const [id, score] of entries) {
+      const row = byId.get(id);
+      if (!row) continue;
+      const cell: AllPlayCell = { wins: 0, losses: 0, ties: 0 };
+      for (const [oid, os] of entries) {
+        if (oid === id) continue;
+        if (score > os) cell.wins += 1;
+        else if (score < os) cell.losses += 1;
+        else cell.ties += 1;
+      }
+      row.weeks[w] = cell;
+      row.total.wins += cell.wins;
+      row.total.losses += cell.losses;
+      row.total.ties += cell.ties;
+    }
+  }
+
+  rows.sort((a, b) => b.total.wins - a.total.wins || a.total.losses - b.total.losses);
+  return { weeks, rows };
+}
+
+
+export type MedianRow = {
+  teamId: number;
+  teamName: string;
+  ownerName: string;
+  weeks: Record<number, "W" | "L" | "T">;
+  wins: number;
+  losses: number;
+  ties: number;
+};
+
+function weeklyScores(season: SeasonData): Map<number, Map<number, number>> {
+  const byWeek = new Map<number, { id: number; score: number }[]>();
+  const dated = season.matchups.some(
+    (m) => m.matchup_period != null || m.scoring_period != null
+  );
+  if (dated) {
+    for (const m of season.matchups) {
+      const w = (m.matchup_period ?? m.scoring_period) as number;
+      if (w == null) continue;
+      const flag = String(m.winner || "").toUpperCase();
+      if (flag === "UNDECIDED" || flag === "PENDING" || flag === "SCHEDULED") continue;
+      if (!byWeek.has(w)) byWeek.set(w, []);
+      const list = byWeek.get(w)!;
+      if (m.home_team_id != null && m.home_score != null) list.push({ id: m.home_team_id, score: m.home_score });
+      if (m.away_team_id != null && m.away_score != null) list.push({ id: m.away_team_id, score: m.away_score });
+    }
+  } else {
+    let week = 1;
+    let bucket: { id: number; score: number }[] = [];
+    const seen = new Set<number>();
+    for (const m of season.matchups) {
+      if (m.home_team_id == null || m.away_team_id == null) continue;
+      if (seen.has(m.home_team_id) || seen.size >= season.teams.length) {
+        if (bucket.some((s) => s.score !== 0)) byWeek.set(week, bucket);
+        week += 1;
+        bucket = [];
+        seen.clear();
+      }
+      seen.add(m.home_team_id);
+      if (m.away_team_id != null) seen.add(m.away_team_id);
+      if (m.home_score != null) bucket.push({ id: m.home_team_id, score: m.home_score });
+      if (m.away_team_id != null && m.away_score != null) bucket.push({ id: m.away_team_id, score: m.away_score });
+      if (seen.size >= season.teams.length || bucket.length >= season.teams.length) {
+        if (bucket.some((s) => s.score !== 0)) byWeek.set(week, bucket);
+        week += 1;
+        bucket = [];
+        seen.clear();
+      }
+    }
+    if (bucket.some((s) => s.score !== 0)) byWeek.set(week, bucket);
+  }
+  const out = new Map<number, Map<number, number>>();
+  for (const [w, list] of byWeek) {
+    if (!list.some((s) => s.score !== 0)) continue;
+    const latest = new Map<number, number>();
+    for (const s of list) latest.set(s.id, s.score);
+    out.set(w, latest);
+  }
+  return out;
+}
+
+function weekMedian(scores: number[]): number | null {
+  if (!scores.length) return null;
+  const s = [...scores].sort((a, b) => a - b);
+  const n = s.length;
+  if (n % 2 === 1) return s[Math.floor(n / 2)];
+  return (s[n / 2 - 1] + s[n / 2]) / 2;
+}
+
+export function getMedianTable(
+  sport: "football" | "baseball",
+  year: number
+): { weeks: number[]; rows: MedianRow[]; lines: Record<number, number> } {
+  const season = getSeasonData(sport, year);
+  if (!season) return { weeks: [], rows: [], lines: {} };
+  const byWeek = weeklyScores(season);
+  const weeks = [...byWeek.keys()].sort((a, b) => a - b);
+  const lines: Record<number, number> = {};
+  const rows: MedianRow[] = season.teams.map((t) => ({
+    teamId: t.team_id,
+    teamName: t.team_name,
+    ownerName: ownerDisplayName(t),
+    weeks: {},
+    wins: 0,
+    losses: 0,
+    ties: 0,
+  }));
+  const byId = new Map(rows.map((r) => [r.teamId, r]));
+  for (const w of weeks) {
+    const latest = byWeek.get(w)!;
+    const med = weekMedian([...latest.values()]);
+    if (med == null) continue;
+    lines[w] = med;
+    for (const [id, score] of latest) {
+      const row = byId.get(id);
+      if (!row) continue;
+      if (score > med) {
+        row.weeks[w] = "W";
+        row.wins += 1;
+      } else if (score < med) {
+        row.weeks[w] = "L";
+        row.losses += 1;
+      } else {
+        row.weeks[w] = "T";
+        row.ties += 1;
+      }
+    }
+  }
+  rows.sort((a, b) => b.wins - a.wins || a.losses - b.losses);
+  return { weeks, rows, lines };
+}
+
 export function ordinal(n: number): string {
   const abs = Math.abs(n);
   const mod100 = abs % 100;

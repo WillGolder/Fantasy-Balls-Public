@@ -5,10 +5,13 @@ import {
   getTeamSeasonAdvanced,
   getAvailableYears,
   getSeasonPlayoffRows,
+  getAllPlayTable,
+  getMedianTable,
 } from "@/lib/data";
 import { siteName } from "@/lib/owners";
 import { SeasonStandings } from "@/components/SeasonStandings";
 import { SeasonAdvancedTable } from "@/components/SeasonAdvancedTable";
+import { AllPlayTable } from "@/components/AllPlayTable";
 import type { SeasonData } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -49,6 +52,8 @@ export default async function FootballSeasonPage({
   const season = getSeasonData("football", year);
   if (!season) notFound();
   const playoffs = getSeasonPlayoffRows("football", year);
+  const allPlay = getAllPlayTable("football", year);
+  const median = getMedianTable("football", year);
   const advanced = getTeamSeasonAdvanced("football", year).sort(
     (a, b) => b.ppg - a.ppg
   );
@@ -117,6 +122,27 @@ export default async function FootballSeasonPage({
             </table>
           </div>
         )}
+      </section>
+
+
+      <section className="space-y-3">
+        <h2 className="section-title">
+          Weekly Record <span>vs All Teams</span>
+        </h2>
+        <p className="text-xs text-[var(--muted)]">
+          Each week compared to every other team&apos;s score, not just the scheduled opponent.
+        </p>
+        <AllPlayTable weeks={allPlay.weeks} rows={allPlay.rows} />
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="section-title">
+          Record <span>vs Median</span>
+        </h2>
+        <p className="text-xs text-[var(--muted)]">
+          Win if you score above the weekly median, loss if below.
+        </p>
+        <MedianTable weeks={median.weeks} rows={median.rows} lines={median.lines} />
       </section>
 
       <section className="space-y-3">
