@@ -12,6 +12,7 @@ import { siteName } from "@/lib/owners";
 import { SeasonStandings } from "@/components/SeasonStandings";
 import { SeasonAdvancedTable } from "@/components/SeasonAdvancedTable";
 import { AllPlayTable } from "@/components/AllPlayTable";
+import { MedianTable } from "@/components/MedianTable";
 import type { SeasonData } from "@/lib/data";
 
 export function generateStaticParams() {
