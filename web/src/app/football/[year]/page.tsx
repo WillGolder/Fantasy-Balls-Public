@@ -13,6 +13,8 @@ import { SeasonStandings } from "@/components/SeasonStandings";
 import { SeasonAdvancedTable } from "@/components/SeasonAdvancedTable";
 import { AllPlayTable } from "@/components/AllPlayTable";
 import { MedianTable } from "@/components/MedianTable";
+import { LuckTable } from "@/components/LuckTable";
+import { getLuckTable } from "@/lib/desk";
 import type { SeasonData } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -55,6 +57,7 @@ export default async function FootballSeasonPage({
   const playoffs = getSeasonPlayoffRows("football", year);
   const allPlay = getAllPlayTable("football", year);
   const median = getMedianTable("football", year);
+  const luck = getLuckTable("football", year);
   const advanced = getTeamSeasonAdvanced("football", year).sort(
     (a, b) => b.ppg - a.ppg
   );
@@ -144,6 +147,16 @@ export default async function FootballSeasonPage({
           Win if you score above the weekly median, loss if below.
         </p>
         <MedianTable weeks={median.weeks} rows={median.rows} lines={median.lines} />
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="section-title">
+          Luck <span>index</span>
+        </h2>
+        <p className="text-xs text-[var(--muted)]">
+          Record vs all-play expected wins. Positive = lucky schedule.
+        </p>
+        <LuckTable rows={luck} />
       </section>
 
       <section className="space-y-3">

@@ -1583,7 +1583,7 @@ export type MedianRow = {
   ties: number;
 };
 
-function weeklyScores(season: SeasonData): Map<number, Map<number, number>> {
+export function weeklyScores(season: SeasonData): Map<number, Map<number, number>> {
   const byWeek = new Map<number, { id: number; score: number }[]>();
   const dated = season.matchups.some(
     (m) => m.matchup_period != null || m.scoring_period != null
@@ -1634,7 +1634,7 @@ function weeklyScores(season: SeasonData): Map<number, Map<number, number>> {
   return out;
 }
 
-function weekMedian(scores: number[]): number | null {
+export function weekMedian(scores: number[]): number | null {
   if (!scores.length) return null;
   const s = [...scores].sort((a, b) => a - b);
   const n = s.length;

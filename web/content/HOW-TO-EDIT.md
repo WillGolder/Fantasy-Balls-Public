@@ -21,8 +21,22 @@ Open `quotes.json`. Copy a line:
 ## Quotes (image)
 Same idea: file in `web/public/quotes/photo.jpg` and `"image": "/quotes/photo.jpg"`
 
-## Dues / draft
-`league.json` — change `"paid": ["Will Golder", "Brendan Reed"]` and the draft date.
+## Commissioner desk (hidden)
+Open `thefantasyballs.com/commissionerdesk` — not in the nav.
+
+`desk.json`:
+```
+{
+  "sport": "football",
+  "year": 2026,
+  "gotwLast": ["Unabomber", "Egbukakke"],
+  "gotwNext": ["Women", "Upstate NY Sucks"],
+  "youtube": "https://youtu.be/...",
+  "notes": "Jokes for this week"
+}
+```
+
+`power-snap.json` — after Tuesday ranks look right, copy owner names and ranks so next week shows ↑↓.
 
 ## Bios
 `bios.json`
