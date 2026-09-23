@@ -172,7 +172,17 @@ export default function CommissionerDeskPage() {
             return (
               <div key={`${g.homeId}-${g.awayId}-${g.week}`} className="card p-6 space-y-3">
                 <p className="text-xs uppercase tracking-widest text-[var(--gold)]">
-                  {i === 0 && gotwGame ? "Game of the week" : `Game ${i + 1} · closest to blowout`}
+                  {i === 0 && gotwGame
+                    ? "Game of the week"
+                    : i === recapOrder.length - 1
+                    ? "Largest margin"
+                    : i === 1
+                    ? "Closest"
+                    : i === 2
+                    ? "Next closest"
+                    : i === 3
+                    ? "Third closest"
+                    : `Game ${i + 1}`}
                 </p>
                 <p className="text-2xl font-black leading-tight">
                   {g.homeTeam} {g.homeScore.toFixed(2)}

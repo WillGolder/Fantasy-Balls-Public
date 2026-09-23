@@ -10,6 +10,7 @@ import {
   ownerDisplayName,
   getAllQuotes,
 } from "@/lib/data";
+import { getDeskConfig } from "@/lib/desk";
 import { siteName } from "@/lib/owners";
 import { DraftCountdown } from "@/components/DraftCountdown";
 import { HomeLeadersTable } from "@/components/HomeLeadersTable";
@@ -132,6 +133,32 @@ export default function HomePage() {
           </p>
         </div>
       </section>
+
+
+      {/* Game of the week */}
+      {(() => {
+        const desk = getDeskConfig();
+        const next = (desk.gotwNext || []).filter(Boolean);
+        const last = (desk.gotwLast || []).filter(Boolean);
+        const line = next.length >= 2 ? next : last;
+        if (line.length < 2) return null;
+        const isNext = next.length >= 2;
+        return (
+          <section className="px-4 py-8 border-b border-[#2a2834]">
+            <div className="max-w-xl mx-auto text-center space-y-2">
+              <p className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-[var(--gold)]">
+                {isNext ? "Game of the Week" : "Game of the Week"}
+              </p>
+              <p className="text-2xl sm:text-3xl font-black">
+                {line[0]} <span className="text-[var(--gold)]">vs</span> {line[1]}
+              </p>
+              <p className="text-sm text-[var(--muted)]">
+                {isNext ? "This week’s featured matchup" : "Last week’s featured matchup"}
+              </p>
+            </div>
+          </section>
+        );
+      })()}
 
       {/* Draft countdown */}
       <section className="px-4 py-8 section-band border-b border-[#2a2834]">
