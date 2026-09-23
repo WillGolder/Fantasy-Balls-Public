@@ -17,12 +17,14 @@ import {
   getHistoricalScores,
   scoreRank,
   chalkFavorite,
+  getGotwWeeks,
 } from "@/lib/desk";
 import { siteName, ownerDisplayName } from "@/lib/owners";
 import { DeskH2H } from "./DeskH2H";
 
 export default function CommissionerDeskPage() {
   const cfg = getDeskConfig();
+  const gotwBoard = getGotwWeeks();
   const years = getAvailableYears(cfg.sport);
   const year = years.includes(cfg.year) ? cfg.year : years[0];
   const season = year ? getSeasonData(cfg.sport, year) : null;
@@ -42,7 +44,10 @@ export default function CommissionerDeskPage() {
   );
 
   const sortedWeek = [...thisWeek].sort((a, b) => a.margin - b.margin);
-  const gotwNames = (cfg.gotwLast || []).map((s) => s.toLowerCase());
+  const gotwPick =
+    gotwBoard.weeks.find((w) => w.week === latestWeek && w.a && w.b) ||
+    [...gotwBoard.weeks].reverse().find((w) => w.a && w.b);
+  const gotwNames = gotwPick ? [gotwPick.a, gotwPick.b].map((s) => s.toLowerCase()) : [];
   const gotwGame = sortedWeek.find(
     (g) =>
       gotwNames.some((n) => g.homeTeam.toLowerCase().includes(n) || g.homeOwner.toLowerCase().includes(n)) &&
@@ -133,20 +138,31 @@ export default function CommissionerDeskPage() {
         </div>
       </section>
 
-      <section className="card p-4 space-y-2">
-        <h2 className="section-title">GOTW</h2>
-        <p className="text-sm">
-          Last week pick:{" "}
-          <span className="text-[var(--gold)]">
-            {cfg.gotwLast.length ? cfg.gotwLast.join(" vs ") : "set in content/desk.json"}
-          </span>
+      <section className="card p-5 space-y-4">
+        <h2 className="section-title">GOTW tracker</h2>
+        <p className="text-sm text-[var(--muted)]">
+          Fill names in content/gotw.json. Empty weeks stay blank until you pick.
         </p>
-        <p className="text-sm">
-          Next week pick:{" "}
-          <span className="text-[var(--gold)]">
-            {cfg.gotwNext.length ? cfg.gotwNext.join(" vs ") : "set in content/desk.json"}
-          </span>
-        </p>
+        <div className="overflow-x-auto">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th>Week</th>
+                <th>Matchup</th>
+              </tr>
+            </thead>
+            <tbody>
+              {gotwBoard.weeks.map((w) => (
+                <tr key={w.week} className={w.week === latestWeek ? "font-bold" : ""}>
+                  <td>{w.week}</td>
+                  <td>
+                    {w.a && w.b ? `${w.a} vs ${w.b}` : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
         {cfg.youtube && (
           <p className="text-sm">
             <a className="text-[var(--gold)] underline" href={cfg.youtube}>

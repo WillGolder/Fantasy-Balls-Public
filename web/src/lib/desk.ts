@@ -39,6 +39,29 @@ export function getDeskConfig(): DeskConfig {
   }
 }
 
+
+export type GotwWeek = { week: number; a: string; b: string };
+
+export function getGotwWeeks(): { sport: "football" | "baseball"; year: number; weeks: GotwWeek[] } {
+  const fallback = {
+    sport: "football" as const,
+    year: 2026,
+    weeks: Array.from({ length: 14 }, (_, i) => ({ week: i + 1, a: "", b: "" })),
+  };
+  try {
+    const raw = JSON.parse(
+      fs.readFileSync(path.join(process.cwd(), "content", "gotw.json"), "utf-8")
+    );
+    const weeks: GotwWeek[] = fallback.weeks.map((slot) => {
+      const found = (raw.weeks || []).find((w: GotwWeek) => w.week === slot.week);
+      return found ? { week: slot.week, a: found.a || "", b: found.b || "" } : slot;
+    });
+    return { sport: raw.sport || "football", year: raw.year || 2026, weeks };
+  } catch {
+    return fallback;
+  }
+}
+
 export type WeekGame = {
   week: number;
   homeId: number;

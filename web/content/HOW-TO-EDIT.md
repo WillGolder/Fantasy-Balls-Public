@@ -21,6 +21,9 @@ Open `quotes.json`. Copy a line:
 ## Quotes (image)
 Same idea: file in `web/public/quotes/photo.jpg` and `"image": "/quotes/photo.jpg"`
 
+## Game of the Week
+`gotw.json` — 14 week slots. Put two names in `"a"` and `"b"` for that week.
+
 ## Commissioner desk (hidden)
 Open `thefantasyballs.com/commissionerdesk` — not in the nav.
 
