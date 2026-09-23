@@ -2,7 +2,7 @@
   "sport": "football",
   "year": 2026,
   "weeks": [
-    { "week": 1, "a": "", "b": "" },
+    { "week": 1, "a": "John Kornobis", "b": "Will Golder" },
     { "week": 2, "a": "Jake Stern", "b": "Alec Kerestedjian" },
     { "week": 3, "a": "Eddie Cramsie", "b": "Jake Stern" },
     { "week": 4, "a": "", "b": "" },
