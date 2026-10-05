@@ -2,7 +2,7 @@
   "sport": "football",
   "league_id": 225969362,
   "year": 2026,
-  "pulled_at": "2026-09-29T11:04:02.582999Z",
+  "pulled_at": "2026-10-05T19:26:38.290032Z",
   "settings": {
     "name": "Fantasy Balls",
     "scoring_type": "H2H_POINTS",
@@ -31,7 +31,7 @@
       "points_against": 363.24,
       "standing": 1,
       "final_standing": 0,
-      "playoff_pct": 89.725,
+      "playoff_pct": 89.775,
       "streak_type": "WIN",
       "streak_length": 3,
       "logo_url": "https://sports.cbsimg.net/images/blogs/Trump-Patriots-12-17-15.png",
@@ -57,7 +57,7 @@
       "points_against": 432.62,
       "standing": 8,
       "final_standing": 0,
-      "playoff_pct": 51.800000000000004,
+      "playoff_pct": 48.3,
       "streak_type": "LOSS",
       "streak_length": 1,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/CreepShow-ToddDetwiler/CreepShow-19.svg",
@@ -66,7 +66,7 @@
     },
     {
       "team_id": 3,
-      "team_name": "1-1",
+      "team_name": "2-1",
       "team_abbrev": "🍒",
       "owners": [
         {
@@ -83,7 +83,7 @@
       "points_against": 360.26,
       "standing": 5,
       "final_standing": 0,
-      "playoff_pct": 69.05,
+      "playoff_pct": 68.45,
       "streak_type": "WIN",
       "streak_length": 2,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/StadiumFoods-ESPN/stadium-foods_beer.svg",
@@ -109,7 +109,7 @@
       "points_against": 395.32,
       "standing": 3,
       "final_standing": 0,
-      "playoff_pct": 73.15,
+      "playoff_pct": 72.3,
       "streak_type": "WIN",
       "streak_length": 1,
       "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/22e41a70-92bb-11f1-9b94-67d561221a90",
@@ -135,7 +135,7 @@
       "points_against": 359.8,
       "standing": 4,
       "final_standing": 0,
-      "playoff_pct": 73.125,
+      "playoff_pct": 75.35,
       "streak_type": "LOSS",
       "streak_length": 1,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/AtTheStadium-RobbHarskamp/At_The_Stadium_06.svg",
@@ -161,7 +161,7 @@
       "points_against": 425.58,
       "standing": 2,
       "final_standing": 0,
-      "playoff_pct": 70.775,
+      "playoff_pct": 76.25,
       "streak_type": "WIN",
       "streak_length": 2,
       "logo_url": "https://g.espncdn.com/lm-static/ffl/images/default_logos/14.svg",
@@ -187,7 +187,7 @@
       "points_against": 395.98,
       "standing": 10,
       "final_standing": 0,
-      "playoff_pct": 29.825000000000003,
+      "playoff_pct": 36.7,
       "streak_type": "LOSS",
       "streak_length": 3,
       "logo_url": "https://g.espncdn.com/lm-static/ffl/images/default_logos/19.svg",
@@ -213,7 +213,7 @@
       "points_against": 451.94,
       "standing": 7,
       "final_standing": 0,
-      "playoff_pct": 51.725,
+      "playoff_pct": 52.425,
       "streak_type": "WIN",
       "streak_length": 1,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/core/DIS_Avengers_EndGame/DIS_Avengers_EndGame_Thanos.svg",
@@ -239,7 +239,7 @@
       "points_against": 450.12,
       "standing": 9,
       "final_standing": 0,
-      "playoff_pct": 39.825,
+      "playoff_pct": 41.699999999999996,
       "streak_type": "LOSS",
       "streak_length": 2,
       "logo_url": "https://mystique-api.fantasy.espn.com/apis/v1/domains/lm/images/e878fca0-8aa7-11f0-9d0e-d3c969c03a65",
@@ -265,7 +265,7 @@
       "points_against": 456.42,
       "standing": 6,
       "final_standing": 0,
-      "playoff_pct": 51.0,
+      "playoff_pct": 38.75,
       "streak_type": "LOSS",
       "streak_length": 2,
       "logo_url": "https://g.espncdn.com/lm-static/logo-packs/ffl/ShieldsOfGlory-LDopa/ShieldsOfGlory-06.svg",
@@ -320,7 +320,7 @@
       "home_team_name": "Canned Heat",
       "home_score": 119.16,
       "away_team_id": 3,
-      "away_team_name": "1-1",
+      "away_team_name": "2-1",
       "away_score": 96.84,
       "winner": null,
       "is_playoff": false,
@@ -372,7 +372,7 @@
       "home_team_name": "Unabomber",
       "home_score": 122.56,
       "away_team_id": 3,
-      "away_team_name": "1-1",
+      "away_team_name": "2-1",
       "away_score": 123.08,
       "winner": null,
       "is_playoff": false,
@@ -450,7 +450,7 @@
       "home_team_name": "Brown Flowers in my Fannin",
       "home_score": 118.54,
       "away_team_id": 3,
-      "away_team_name": "1-1",
+      "away_team_name": "2-1",
       "away_score": 158.36,
       "winner": null,
       "is_playoff": false,
@@ -474,10 +474,10 @@
       "scoring_period": null,
       "home_team_id": 1,
       "home_team_name": "Women",
-      "home_score": 0.0,
+      "home_score": 173.38,
       "away_team_id": 10,
       "away_team_name": "Saratoga Settlers",
-      "away_score": 0.0,
+      "away_score": 113.38,
       "winner": null,
       "is_playoff": false,
       "is_consolation": false
@@ -487,10 +487,10 @@
       "scoring_period": null,
       "home_team_id": 2,
       "home_team_name": "Nabers Touched My Penix",
-      "home_score": 0.0,
+      "home_score": 121.62,
       "away_team_id": 5,
       "away_team_name": "Canned Heat",
-      "away_score": 0.0,
+      "away_score": 141.08,
       "winner": null,
       "is_playoff": false,
       "is_consolation": false
@@ -500,10 +500,10 @@
       "scoring_period": null,
       "home_team_id": 7,
       "home_team_name": "Mevis and Butthead",
-      "home_score": 0.0,
+      "home_score": 157.18,
       "away_team_id": 4,
       "away_team_name": "Unabomber",
-      "away_score": 0.0,
+      "away_score": 89.62,
       "winner": null,
       "is_playoff": false,
       "is_consolation": false
@@ -513,10 +513,10 @@
       "scoring_period": null,
       "home_team_id": 8,
       "home_team_name": "Egbukakke",
-      "home_score": 0.0,
+      "home_score": 106.3,
       "away_team_id": 6,
       "away_team_name": "Barkleys Thunder Thighs",
-      "away_score": 0.0,
+      "away_score": 149.44,
       "winner": null,
       "is_playoff": false,
       "is_consolation": false
@@ -526,10 +526,10 @@
       "scoring_period": null,
       "home_team_id": 9,
       "home_team_name": "Brown Flowers in my Fannin",
-      "home_score": 0.0,
+      "home_score": 124.28,
       "away_team_id": 3,
-      "away_team_name": "1-1",
-      "away_score": 0.0,
+      "away_team_name": "2-1",
+      "away_score": 138.7,
       "winner": null,
       "is_playoff": false,
       "is_consolation": false
@@ -552,7 +552,7 @@
       "player_name": "Bijan Robinson",
       "player_id": 4430807,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 1,
@@ -705,7 +705,7 @@
       "player_name": "George Pickens",
       "player_id": 4426354,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 2,
@@ -732,7 +732,7 @@
       "player_name": "Travis Etienne Jr.",
       "player_id": 4239996,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 3,
@@ -885,7 +885,7 @@
       "player_name": "Tee Higgins",
       "player_id": 4239993,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 4,
@@ -912,7 +912,7 @@
       "player_name": "Joe Burrow",
       "player_id": 3915511,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 5,
@@ -1065,7 +1065,7 @@
       "player_name": "Tyler Warren",
       "player_id": 4431459,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 6,
@@ -1092,7 +1092,7 @@
       "player_name": "DK Metcalf",
       "player_id": 4047650,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 7,
@@ -1245,7 +1245,7 @@
       "player_name": "Quentin Johnston",
       "player_id": 4429025,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 8,
@@ -1272,7 +1272,7 @@
       "player_name": "Brandon Aubrey",
       "player_id": 3953687,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 9,
@@ -1425,7 +1425,7 @@
       "player_name": "Texans D/ST",
       "player_id": -16034,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 10,
@@ -1452,7 +1452,7 @@
       "player_name": "Jacory Croskey-Merritt",
       "player_id": 4575131,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 11,
@@ -1605,7 +1605,7 @@
       "player_name": "Stefon Diggs",
       "player_id": 2976212,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 12,
@@ -1632,7 +1632,7 @@
       "player_name": "Kenny Gainwell",
       "player_id": 4371733,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 13,
@@ -1785,7 +1785,7 @@
       "player_name": "Deebo Samuel Sr.",
       "player_id": 3126486,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 14,
@@ -1812,7 +1812,7 @@
       "player_name": "Kyler Murray",
       "player_id": 3917315,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 15,
@@ -1965,7 +1965,7 @@
       "player_name": "Terrance Ferguson",
       "player_id": 4570037,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 16,
@@ -1992,7 +1992,7 @@
       "player_name": "Kenyon Sadiq",
       "player_id": 5083315,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 17,
@@ -2145,7 +2145,7 @@
       "player_name": "Cameron Johnston",
       "player_id": 3051397,
       "team_id": 3,
-      "team_name": "1-1"
+      "team_name": "2-1"
     },
     {
       "round": 18,
