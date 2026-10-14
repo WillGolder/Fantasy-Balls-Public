@@ -11,38 +11,27 @@ export function DeskH2H({
   rows: H2HDetailed[];
   active?: string[];
 }) {
-  const [q, setQ] = useState("");
+  const [open, setOpen] = useState<string | null>(null);
   const names = useMemo(() => {
     const s = new Set<string>();
     for (const r of rows) {
       s.add(r.ownerA);
       s.add(r.ownerB);
     }
-    return [...s].sort((a, b) => siteName(a).localeCompare(siteName(b)));
-  }, [rows]);
-
-  const focus = names.filter((n) => {
-    if (active?.length && !active.includes(n)) return false;
-    if (!q) return true;
-    const needle = q.toLowerCase();
-    return n.toLowerCase().includes(needle) || siteName(n).toLowerCase().includes(needle);
-  });
+    let list = [...s].sort((a, b) => siteName(a).localeCompare(siteName(b)));
+    if (active?.length) {
+      const set = new Set(active);
+      list = list.filter((n) => set.has(n));
+    }
+    return list;
+  }, [rows, active]);
 
   return (
-    <div className="space-y-6">
-      <input
-        value={q}
-        onChange={(e) => setQ(e.target.value)}
-        placeholder="Jump to an owner…"
-        className="w-full sm:w-72 rounded-md bg-[#121018] border border-[#2a2834] px-3 py-2 text-sm"
-        list="desk-owners"
-      />
-      <datalist id="desk-owners">
-        {names.map((n) => (
-          <option key={n} value={siteName(n)} />
-        ))}
-      </datalist>
-      {focus.map((name) => {
+    <div className="space-y-2">
+      <p className="text-sm text-[var(--muted)]">
+        Click a name to expand their full head-to-head. Click again to close.
+      </p>
+      {names.map((name) => {
         const mine = rows
           .filter((r) => r.ownerA === name || r.ownerB === name)
           .map((r) => {
@@ -53,41 +42,65 @@ export function DeskH2H({
             const fbL = r.ownerA === name ? r.footballWinsB : r.footballWinsA;
             const bbW = r.ownerA === name ? r.baseballWinsA : r.baseballWinsB;
             const bbL = r.ownerA === name ? r.baseballWinsB : r.baseballWinsA;
-            return { opp, wins, losses, ties: r.ties, games: r.totalGames, fbW, fbL, bbW, bbL };
+            return {
+              opp,
+              wins,
+              losses,
+              ties: r.ties,
+              games: r.totalGames,
+              fbW,
+              fbL,
+              bbW,
+              bbL,
+            };
           })
           .sort((a, b) => siteName(a.opp).localeCompare(siteName(b.opp)));
+        const isOpen = open === name;
         return (
-          <div key={name} className="card p-5 space-y-2">
-            <h3 className="text-lg font-black">{siteName(name)}</h3>
-            <table className="data-table">
-              <thead>
-                <tr>
-                  <th>Opponent</th>
-                  <th className="num">Games</th>
-                  <th className="num">{siteName(name)}–them</th>
-                  <th className="num">Football</th>
-                  <th className="num">Baseball</th>
-                </tr>
-              </thead>
-              <tbody>
-                {mine.map((r) => (
-                  <tr key={r.opp}>
-                    <td>{siteName(r.opp)}</td>
-                    <td className="num">{r.games}</td>
-                    <td className="num">
-                      {r.wins}–{r.losses}
-                      {r.ties ? `–${r.ties}` : ""}
-                    </td>
-                    <td className="num">
-                      {r.fbW}–{r.fbL}
-                    </td>
-                    <td className="num">
-                      {r.bbW}–{r.bbL}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div key={name} className="card overflow-hidden">
+            <button
+              type="button"
+              onClick={() => setOpen(isOpen ? null : name)}
+              className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-white/5"
+            >
+              <span className="font-black">{siteName(name)}</span>
+              <span className="text-xs text-[var(--muted)]">
+                {mine.length} opponents · {isOpen ? "hide" : "show"}
+              </span>
+            </button>
+            {isOpen && (
+              <div className="px-4 pb-4 overflow-x-auto border-t border-[#2a2834]">
+                <table className="data-table mt-2">
+                  <thead>
+                    <tr>
+                      <th>Opponent</th>
+                      <th className="num">Games</th>
+                      <th className="num">{siteName(name)}–them</th>
+                      <th className="num">Football</th>
+                      <th className="num">Baseball</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {mine.map((r) => (
+                      <tr key={r.opp}>
+                        <td>{siteName(r.opp)}</td>
+                        <td className="num">{r.games}</td>
+                        <td className="num">
+                          {r.wins}–{r.losses}
+                          {r.ties ? `–${r.ties}` : ""}
+                        </td>
+                        <td className="num">
+                          {r.fbW}–{r.fbL}
+                        </td>
+                        <td className="num">
+                          {r.bbW}–{r.bbL}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
         );
       })}

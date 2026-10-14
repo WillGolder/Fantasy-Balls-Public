@@ -205,6 +205,7 @@ export type ScoreEcho = {
   team: string;
   year: number;
   sport: string;
+  week: number | null;
 };
 
 export function getHistoricalScores(sport: "football" | "baseball"): ScoreEcho[] {
@@ -220,6 +221,7 @@ export function getHistoricalScores(sport: "football" | "baseball"): ScoreEcho[]
           team: teamOf.get(m.home_team_id) || "",
           year: season.year,
           sport: season.sport,
+          week: m.matchup_period ?? m.scoring_period ?? null,
         });
       }
       if (m.away_team_id != null && m.away_score) {
@@ -229,6 +231,7 @@ export function getHistoricalScores(sport: "football" | "baseball"): ScoreEcho[]
           team: teamOf.get(m.away_team_id) || "",
           year: season.year,
           sport: season.sport,
+          week: m.matchup_period ?? m.scoring_period ?? null,
         });
       }
     }
@@ -239,6 +242,25 @@ export function getHistoricalScores(sport: "football" | "baseball"): ScoreEcho[]
 export function scoreRank(sport: "football" | "baseball", score: number): number {
   const all = getHistoricalScores(sport);
   return all.filter((s) => s.score > score).length + 1;
+}
+
+export function getScoreAppearances(
+  sport: "football" | "baseball",
+  topN = 100,
+  bottomN = 50
+): { owner: string; top: number; bottom: number; total: number }[] {
+  const all = getHistoricalScores(sport);
+  const top = all.slice(0, topN);
+  const bottom = [...all].reverse().slice(0, bottomN);
+  const map = new Map<string, { owner: string; top: number; bottom: number; total: number }>();
+  const bump = (owner: string) => {
+    if (!map.has(owner)) map.set(owner, { owner, top: 0, bottom: 0, total: 0 });
+    return map.get(owner)!;
+  };
+  for (const s of all) bump(s.owner).total += 1;
+  for (const s of top) bump(s.owner).top += 1;
+  for (const s of bottom) bump(s.owner).bottom += 1;
+  return [...map.values()].sort((a, b) => b.top - a.top || b.bottom - a.bottom);
 }
 
 export type CloseLedger = {
@@ -304,14 +326,31 @@ export function getUpcomingOpponents(season: SeasonData, teamId: number, n = 3) 
   const ownerOf = new Map(season.teams.map((t) => [t.team_id, ownerDisplayName(t)]));
   const teamOf = new Map(season.teams.map((t) => [t.team_id, t.team_name]));
   const pfOf = new Map(season.teams.map((t) => [t.team_id, teamPointsFor(season, t)]));
-  const out: { owner: string; team: string; pf: number }[] = [];
+  const recOf = new Map(
+    season.teams.map((t) => {
+      const g = (t.wins || 0) + (t.losses || 0) + (t.ties || 0);
+      return [t.team_id, { wins: t.wins || 0, losses: t.losses || 0, winPct: g ? (t.wins || 0) / g : 0 }];
+    })
+  );
+  const out: {
+    owner: string;
+    team: string;
+    pf: number;
+    wins: number;
+    losses: number;
+    winPct: number;
+  }[] = [];
   for (const m of games) {
     const oid = m.home_team_id === teamId ? m.away_team_id : m.home_team_id;
     if (oid == null) continue;
+    const rec = recOf.get(oid) || { wins: 0, losses: 0, winPct: 0 };
     out.push({
       owner: ownerOf.get(oid) || "",
       team: teamOf.get(oid) || "",
       pf: pfOf.get(oid) || 0,
+      wins: rec.wins,
+      losses: rec.losses,
+      winPct: rec.winPct,
     });
     if (out.length >= n) break;
   }
@@ -371,4 +410,205 @@ export function chalkFavorite(game: WeekGame, luck: LuckRow[]) {
   const bScore = (b?.allPlayW || 0) + (game.awayScore || 0);
   if (aScore === bScore) return null;
   return aScore > bScore ? game.homeOwner : game.awayOwner;
+}
+
+export type GotwCandidate = {
+  category: "race" | "history" | "form" | "fresh";
+  ownerA: string;
+  ownerB: string;
+  week: number | null;
+  reason: string;
+};
+
+/** Upcoming 0–0 matchups sorted into GOTW story buckets. Same pair can appear in multiple categories. */
+export function getGotwCandidates(
+  sport: "football" | "baseball",
+  year: number,
+  limitPerCat = 4
+): { week: number | null; categories: Record<GotwCandidate["category"], GotwCandidate[]> } {
+  const season = getSeasonData(sport, year);
+  const empty = {
+    week: null as number | null,
+    categories: { race: [], history: [], form: [], fresh: [] } as Record<
+      GotwCandidate["category"],
+      GotwCandidate[]
+    >,
+  };
+  if (!season) return empty;
+
+  const ownerOf = new Map(season.teams.map((t) => [t.team_id, ownerDisplayName(t)]));
+  const teamByOwner = new Map(season.teams.map((t) => [ownerDisplayName(t), t]));
+
+  // Prefer the soonest week that still has unscored games
+  const pending = season.matchups.filter(
+    (m) =>
+      m.home_team_id != null &&
+      m.away_team_id != null &&
+      (m.home_score === 0 || m.home_score == null) &&
+      (m.away_score === 0 || m.away_score == null)
+  );
+  if (!pending.length) return empty;
+
+  const weeks = [
+    ...new Set(
+      pending
+        .map((m) => (m.matchup_period ?? m.scoring_period) as number | null)
+        .filter((w): w is number => w != null)
+    ),
+  ].sort((a, b) => a - b);
+  const targetWeek = weeks[0] ?? null;
+  const slate = pending.filter((m) => {
+    const w = (m.matchup_period ?? m.scoring_period) as number | null;
+    return targetWeek == null || w === targetWeek;
+  });
+
+  const h2h = getHeadToHeadRecordsDetailed();
+  const h2hKey = (a: string, b: string) => [a, b].sort().join("__");
+  const h2hMap = new Map(h2h.map((r) => [h2hKey(r.ownerA, r.ownerB), r]));
+
+  const featured = new Set<string>();
+  for (const w of getGotwWeeks().weeks) {
+    if (w.a) featured.add(w.a.toLowerCase());
+    if (w.b) featured.add(w.b.toLowerCase());
+  }
+
+  const standings = [...season.teams].sort((a, b) => {
+    const ag = (a.wins || 0) + (a.losses || 0) + (a.ties || 0);
+    const bg = (b.wins || 0) + (b.losses || 0) + (b.ties || 0);
+    const ap = ag ? (a.wins || 0) / ag : 0;
+    const bp = bg ? (b.wins || 0) / bg : 0;
+    if (bp !== ap) return bp - ap;
+    return (b.points_for || 0) - (a.points_for || 0);
+  });
+  const rankOf = new Map(standings.map((t, i) => [ownerDisplayName(t), i + 1]));
+  const n = standings.length || 10;
+  const playoffCut = Math.min(6, Math.ceil(n * 0.6));
+
+  type Pair = { a: string; b: string; week: number | null };
+  const pairs: Pair[] = [];
+  const seen = new Set<string>();
+  for (const m of slate) {
+    const a = ownerOf.get(m.home_team_id!) || "";
+    const b = ownerOf.get(m.away_team_id!) || "";
+    if (!a || !b) continue;
+    const k = h2hKey(a, b);
+    if (seen.has(k)) continue;
+    seen.add(k);
+    pairs.push({
+      a,
+      b,
+      week: (m.matchup_period ?? m.scoring_period) as number | null,
+    });
+  }
+
+  const race: GotwCandidate[] = [];
+  const history: GotwCandidate[] = [];
+  const form: GotwCandidate[] = [];
+  const fresh: GotwCandidate[] = [];
+
+  for (const p of pairs) {
+    const ra = rankOf.get(p.a) || 99;
+    const rb = rankOf.get(p.b) || 99;
+    const ta = teamByOwner.get(p.a);
+    const tb = teamByOwner.get(p.b);
+    const recA = `${ta?.wins || 0}-${ta?.losses || 0}`;
+    const recB = `${tb?.wins || 0}-${tb?.losses || 0}`;
+
+    // Race: both near cut, or adjacent ranks, or both bottom 3
+    const bothBubble =
+      (ra <= playoffCut + 1 && rb <= playoffCut + 1) ||
+      (ra >= n - 2 && rb >= n - 2) ||
+      Math.abs(ra - rb) <= 2;
+    if (bothBubble) {
+      let reason = `Seeds #${ra} (${recA}) vs #${rb} (${recB}).`;
+      if (ra <= playoffCut && rb <= playoffCut) {
+        reason = `Both inside the top ${playoffCut} cut — ${recA} vs ${recB}.`;
+      } else if (ra >= n - 2 && rb >= n - 2) {
+        reason = `Toilet-bowl stakes — both near last (${recA} vs ${recB}).`;
+      } else if (
+        (ra <= playoffCut && rb === playoffCut + 1) ||
+        (rb <= playoffCut && ra === playoffCut + 1)
+      ) {
+        reason = `Playoff-line game — one in, one just out (${recA} vs ${recB}).`;
+      }
+      race.push({
+        category: "race",
+        ownerA: p.a,
+        ownerB: p.b,
+        week: p.week,
+        reason,
+      });
+    }
+
+    // History
+    const series = h2hMap.get(h2hKey(p.a, p.b));
+    if (series && series.totalGames >= 3) {
+      const gap = Math.abs(series.winsA - series.winsB);
+      const close = gap <= 2;
+      const droughtA = series.ownerA === p.a ? series.winsA === 0 : series.winsB === 0;
+      const droughtB = series.ownerA === p.b ? series.winsA === 0 : series.winsB === 0;
+      if (close || droughtA || droughtB) {
+        const aIsA = series.ownerA === p.a;
+        const aw = aIsA ? series.winsA : series.winsB;
+        const bw = aIsA ? series.winsB : series.winsA;
+        let reason = `All-time series ${aw}–${bw} over ${series.totalGames} games.`;
+        if (droughtA) reason = `${p.a.split(" ")[0]} is 0–${bw} all-time in this series (${series.totalGames} games).`;
+        if (droughtB) reason = `${p.b.split(" ")[0]} is 0–${aw} all-time in this series (${series.totalGames} games).`;
+        if (close && !droughtA && !droughtB) {
+          reason = `Tight series ${aw}–${bw} (${series.totalGames} games).`;
+        }
+        history.push({
+          category: "history",
+          ownerA: p.a,
+          ownerB: p.b,
+          week: p.week,
+          reason,
+        });
+      }
+    }
+
+    // Form — close PPG
+    const pfA = ta ? teamPointsFor(season, ta) : 0;
+    const pfB = tb ? teamPointsFor(season, tb) : 0;
+    const gamesA = (ta?.wins || 0) + (ta?.losses || 0) + (ta?.ties || 0) || 1;
+    const gamesB = (tb?.wins || 0) + (tb?.losses || 0) + (tb?.ties || 0) || 1;
+    const ppgA = pfA / gamesA;
+    const ppgB = pfB / gamesB;
+    if (Math.abs(ppgA - ppgB) <= 8 && (ppgA > 0 || ppgB > 0)) {
+      form.push({
+        category: "form",
+        ownerA: p.a,
+        ownerB: p.b,
+        week: p.week,
+        reason: `Season PPG nearly even — ${ppgA.toFixed(1)} vs ${ppgB.toFixed(1)}.`,
+      });
+    }
+
+    // Fresh — neither in GOTW tracker yet
+    const aFeat = featured.has(p.a.toLowerCase());
+    const bFeat = featured.has(p.b.toLowerCase());
+    if (!aFeat || !bFeat) {
+      let reason = "Neither manager has been GOTW yet this year.";
+      if (!aFeat && bFeat) reason = `${p.a.split(" ")[0]} has not been GOTW yet this year.`;
+      if (aFeat && !bFeat) reason = `${p.b.split(" ")[0]} has not been GOTW yet this year.`;
+      if (!aFeat && !bFeat) reason = "Neither side has been featured in GOTW yet this year.";
+      fresh.push({
+        category: "fresh",
+        ownerA: p.a,
+        ownerB: p.b,
+        week: p.week,
+        reason,
+      });
+    }
+  }
+
+  return {
+    week: targetWeek,
+    categories: {
+      race: race.slice(0, limitPerCat),
+      history: history.slice(0, limitPerCat),
+      form: form.slice(0, limitPerCat),
+      fresh: fresh.slice(0, limitPerCat),
+    },
+  };
 }

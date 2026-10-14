@@ -18,9 +18,12 @@ import {
   scoreRank,
   chalkFavorite,
   getGotwWeeks,
+  getGotwCandidates,
 } from "@/lib/desk";
 import { siteName, ownerDisplayName } from "@/lib/owners";
 import { DeskH2H } from "./DeskH2H";
+import { DeskNav } from "./DeskNav";
+import { GenericSortable } from "@/components/GenericSortable";
 
 export default function CommissionerDeskPage() {
   const cfg = getDeskConfig();
@@ -28,6 +31,7 @@ export default function CommissionerDeskPage() {
   const years = getAvailableYears(cfg.sport);
   const year = years.includes(cfg.year) ? cfg.year : years[0];
   const season = year ? getSeasonData(cfg.sport, year) : null;
+  const gotwCandidates = year ? getGotwCandidates(cfg.sport, year) : { week: null, categories: { race: [], history: [], form: [], fresh: [] } };
   const games = season ? getWeekGames(season) : [];
   const weeks = [...new Set(games.map((g) => g.week))].sort((a, b) => a - b);
   const latestWeek = weeks[weeks.length - 1] ?? 1;
@@ -123,6 +127,9 @@ export default function CommissionerDeskPage() {
           {cfg.sport === "football" ? "Football" : "Baseball"} {year} · Week{" "}
           {latestWeek}. Not in the nav. Bookmark /commissionerdesk.
         </p>
+        <div className="mt-3">
+          <DeskNav current="main" />
+        </div>
       </div>
 
       <section className="grid gap-3 sm:grid-cols-2">
@@ -174,6 +181,40 @@ export default function CommissionerDeskPage() {
           <p className="text-sm text-[var(--muted)] whitespace-pre-wrap">{cfg.notes}</p>
         )}
       </section>
+
+      <section className="space-y-4">
+        <h2 className="section-title">
+          GOTW candidates{gotwCandidates.week != null ? ` · week ${gotwCandidates.week}` : ""}
+        </h2>
+        <p className="text-sm text-[var(--muted)]">
+          Same matchup can show in more than one bucket. You still pick — this is only the menu. Needs unscored games in the archive (full-schedule pull).
+        </p>
+        {(
+          [
+            ["race", "Race", gotwCandidates.categories.race],
+            ["history", "History", gotwCandidates.categories.history],
+            ["form", "Form", gotwCandidates.categories.form],
+            ["fresh", "Fresh", gotwCandidates.categories.fresh],
+          ] as const
+        ).map(([key, label, list]) => (
+          <div key={key} className="card p-4 space-y-2">
+            <p className="text-xs uppercase tracking-widest text-[var(--gold)]">{label}</p>
+            {list.length ? (
+              list.map((c, i) => (
+                <div key={`${key}-${i}`} className="border-b border-[#2a2834] last:border-0 pb-2 last:pb-0">
+                  <p className="font-bold">
+                    {siteName(c.ownerA)} vs {siteName(c.ownerB)}
+                  </p>
+                  <p className="text-sm text-[var(--muted)]">{c.reason}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-sm text-[var(--muted)]">No strong fits this week.</p>
+            )}
+          </div>
+        ))}
+      </section>
+
 
       <section className="space-y-3">
         <h2 className="section-title">
@@ -237,62 +278,44 @@ export default function CommissionerDeskPage() {
           Positive luck = you keep beating the one guy you played even when the field outscored you.
           Negative = you score like a winner and still lose the matchup.
         </p>
-        <div className="card overflow-x-auto">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Owner</th>
-                <th className="num">W-L</th>
-                <th className="num">All-play</th>
-                <th className="num">Exp W</th>
-                <th className="num">Luck</th>
-              </tr>
-            </thead>
-            <tbody>
-              {luck.map((r) => (
-                <tr key={r.ownerName}>
-                  <td>{siteName(r.ownerName)}</td>
-                  <td className="num">
-                    {r.wins}-{r.losses}
-                  </td>
-                  <td className="num">
-                    {r.allPlayW}-{r.allPlayL}
-                  </td>
-                  <td className="num">{r.expectedWins.toFixed(2)}</td>
-                  <td className="num">{r.luck >= 0 ? "+" : ""}{r.luck.toFixed(2)}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <GenericSortable
+          defaultSortKey="luck"
+          columns={[
+            { key: "owner", label: "Owner" },
+            { key: "record", label: "W-L", align: "right" },
+            { key: "allplay", label: "All-play", align: "right" },
+            { key: "exp", label: "Exp W", align: "right" },
+            { key: "luck", label: "Luck", align: "right" },
+          ]}
+          rows={luck.map((r) => ({
+            key: r.ownerName,
+            owner: siteName(r.ownerName),
+            record: `${r.wins}-${r.losses}`,
+            allplay: `${r.allPlayW}-${r.allPlayL}`,
+            exp: Number(r.expectedWins.toFixed(2)),
+            luck: Number(r.luck.toFixed(2)),
+          }))}
+        />
       </section>
 
       <section className="space-y-3">
         <h2 className="section-title">Power jump</h2>
-        <div className="card overflow-x-auto">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Owner</th>
-                <th className="num">Δ</th>
-                <th className="num">Record #</th>
-              </tr>
-            </thead>
-            <tbody>
-              {power.map((p) => (
-                <tr key={p.ownerName}>
-                  <td>{p.rank}</td>
-                  <td>{siteName(p.ownerName)}</td>
-                  <td className="num">
-                    {p.delta == null ? "—" : p.delta > 0 ? `↑${p.delta}` : p.delta < 0 ? `↓${Math.abs(p.delta)}` : "—"}
-                  </td>
-                  <td className="num">{p.recordRank}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <GenericSortable
+          defaultSortKey="rank"
+          columns={[
+            { key: "rank", label: "#", align: "right" },
+            { key: "owner", label: "Owner" },
+            { key: "delta", label: "Δ", align: "right" },
+            { key: "recordRank", label: "Record #", align: "right" },
+          ]}
+          rows={power.map((p) => ({
+            key: p.ownerName,
+            rank: p.rank,
+            owner: siteName(p.ownerName),
+            delta: p.delta == null ? "—" : p.delta,
+            recordRank: p.recordRank,
+          }))}
+        />
         <p className="text-xs text-[var(--muted)]">
           Paste current ranks into content/power-snap.json each Tuesday to freeze last week.
         </p>
@@ -331,38 +354,43 @@ export default function CommissionerDeskPage() {
       <section className="space-y-3">
         <h2 className="section-title">Schedule of death</h2>
         <p className="text-sm text-[var(--muted)]">
-          Next three opponents for every active team, toughest first by opponent PF.
+          Next three unscored games after the full-schedule pull. Death rating is 60% opponent win% + 40% opponent PF (scaled). Higher = tougher. Click headers to sort.
         </p>
-        <div className="card overflow-x-auto">
-          <table className="data-table">
-            <thead>
-              <tr>
-                <th>Owner</th>
-                <th>Next 3</th>
-                <th className="num">Opp PF</th>
-              </tr>
-            </thead>
-            <tbody>
-              {season?.teams
-                .map((t) => {
-                  const upcoming = getUpcomingOpponents(season, t.team_id, 3);
-                  return { t, upcoming, heat: upcoming.reduce((s, u) => s + u.pf, 0) };
-                })
-                .sort((a, b) => b.heat - a.heat)
-                .map(({ t, upcoming, heat }) => (
-                  <tr key={t.team_id}>
-                    <td>{siteName(ownerDisplayName(t))}</td>
-                    <td>
-                      {upcoming.length
-                        ? upcoming.map((u) => siteName(u.owner)).join(", ")
-                        : "—"}
-                    </td>
-                    <td className="num">{heat ? heat.toFixed(0) : "—"}</td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
-        </div>
+        <GenericSortable
+          defaultSortKey="death"
+          columns={[
+            { key: "owner", label: "Owner" },
+            { key: "next", label: "Next 3" },
+            { key: "oppRec", label: "Opp record", align: "right" },
+            { key: "oppPf", label: "Opp PF", align: "right" },
+            { key: "death", label: "Death", align: "right" },
+          ]}
+          rows={(season?.teams || []).map((t) => {
+            const upcoming = getUpcomingOpponents(season, t.team_id, 3);
+            const maxPf = Math.max(...(season?.teams.map((x) => x.points_for || 0) || [1]), 1);
+            const avgPct = upcoming.length
+              ? upcoming.reduce((s, u) => s + u.winPct, 0) / upcoming.length
+              : 0;
+            const avgPf = upcoming.length
+              ? upcoming.reduce((s, u) => s + u.pf, 0) / upcoming.length
+              : 0;
+            const death = upcoming.length
+              ? Number((avgPct * 60 + (avgPf / maxPf) * 40).toFixed(1))
+              : 0;
+            return {
+              key: String(t.team_id),
+              owner: siteName(ownerDisplayName(t)),
+              next: upcoming.length
+                ? upcoming.map((u) => siteName(u.owner)).join(", ")
+                : "—",
+              oppRec: upcoming.length
+                ? upcoming.map((u) => `${u.wins}-${u.losses}`).join(", ")
+                : "—",
+              oppPf: upcoming.length ? Number(avgPf.toFixed(1)) : 0,
+              death,
+            };
+          })}
+        />
       </section>
 
       <section className="space-y-3">
@@ -419,7 +447,9 @@ export default function CommissionerDeskPage() {
 
       <section className="space-y-3">
         <h2 className="section-title">Historical echoes</h2>
-        <p className="text-sm text-[var(--muted)]">Highest scores by managers in this year&apos;s football league only.</p>
+        <p className="text-sm text-[var(--muted)]">
+          Highest scores by this year&apos;s managers. Rank is among every football score in the year files except 2022 (different scoring). There is no separate scores spreadsheet — the archive is web/data/football/*.json and baseball/*.json.
+        </p>
         <ol className="text-sm space-y-1">
           {echoes.map((e, i) => (
             <li key={`${e.year}-${e.owner}-${i}`}>
