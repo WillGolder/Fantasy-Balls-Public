@@ -210,33 +210,52 @@ export type ScoreEcho = {
 
 export function getHistoricalScores(sport: "football" | "baseball"): ScoreEcho[] {
   const out: ScoreEcho[] = [];
+  const seenMatchup = new Set<string>();
+  const seenScore = new Set<string>();
+
   for (const season of getAllSeasons(sport)) {
+    // 2022 football scoring scale does not match later years
+    if (season.sport === "football" && season.year === 2022) continue;
     const ownerOf = new Map(season.teams.map((t) => [t.team_id, ownerDisplayName(t)]));
     const teamOf = new Map(season.teams.map((t) => [t.team_id, t.team_name]));
+
     for (const m of season.matchups) {
-      if (m.home_team_id != null && m.home_score) {
+      if (m.home_team_id == null || m.away_team_id == null) continue;
+      const week = m.matchup_period ?? m.scoring_period ?? null;
+      const hs = m.home_score ?? 0;
+      const as = m.away_score ?? 0;
+      // Drop duplicate ESPN rows (same teams/week/scores stored more than once)
+      const mk = [
+        season.year,
+        week ?? "x",
+        Math.min(m.home_team_id, m.away_team_id),
+        Math.max(m.home_team_id, m.away_team_id),
+        Number(hs).toFixed(2),
+        Number(as).toFixed(2),
+      ].join("|");
+      if (seenMatchup.has(mk)) continue;
+      seenMatchup.add(mk);
+
+      for (const [tid, score] of [
+        [m.home_team_id, hs],
+        [m.away_team_id, as],
+      ] as const) {
+        if (!score || score <= 0) continue;
+        const sk = `${season.year}|${week ?? "x"}|${tid}|${Number(score).toFixed(2)}`;
+        if (seenScore.has(sk)) continue;
+        seenScore.add(sk);
         out.push({
-          score: m.home_score,
-          owner: ownerOf.get(m.home_team_id) || "",
-          team: teamOf.get(m.home_team_id) || "",
+          score,
+          owner: ownerOf.get(tid) || "",
+          team: teamOf.get(tid) || "",
           year: season.year,
           sport: season.sport,
-          week: m.matchup_period ?? m.scoring_period ?? null,
-        });
-      }
-      if (m.away_team_id != null && m.away_score) {
-        out.push({
-          score: m.away_score,
-          owner: ownerOf.get(m.away_team_id) || "",
-          team: teamOf.get(m.away_team_id) || "",
-          year: season.year,
-          sport: season.sport,
-          week: m.matchup_period ?? m.scoring_period ?? null,
+          week,
         });
       }
     }
   }
-  return out.filter((s) => s.score > 0).sort((a, b) => b.score - a.score);
+  return out.sort((a, b) => b.score - a.score);
 }
 
 export function scoreRank(sport: "football" | "baseball", score: number): number {

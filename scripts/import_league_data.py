@@ -115,6 +115,29 @@ def matchup_to_dict(matchup):
     return data
 
 
+
+def dedupe_matchups(matchups: list) -> list:
+    """Keep one row per matchup (period + teams + scores)."""
+    seen = set()
+    out = []
+    for m in matchups:
+        hid = m.get("home_team_id")
+        aid = m.get("away_team_id")
+        if hid is None or aid is None:
+            continue
+        key = (
+            m.get("matchup_period") or m.get("scoring_period"),
+            min(hid, aid),
+            max(hid, aid),
+            round(float(m.get("home_score") or 0), 2),
+            round(float(m.get("away_score") or 0), 2),
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(m)
+    return out
+
 def pull_football_season(year: int) -> dict:
     """Pull a full football season and return structured data."""
     print(f"  Pulling Football {year}...")
@@ -139,7 +162,9 @@ def pull_football_season(year: int) -> dict:
 
     # Matchups – try every week that exists
     matchups = []
-    max_week = getattr(league, "current_week", 18) or 18
+    current_week = getattr(league, "current_week", 14) or 14
+    reg = getattr(league.settings, "reg_season_count", None) or 14
+    max_week = max(int(current_week), int(reg), 14)
     for week in range(1, max_week + 1):
         try:
             box_scores = league.box_scores(week)
@@ -172,7 +197,7 @@ def pull_football_season(year: int) -> dict:
         "pulled_at": datetime.now().isoformat() + "Z",
         "settings": settings,
         "teams": teams,
-        "matchups": matchups,
+        "matchups": dedupe_matchups(matchups),
         "draft": draft,
     }
 
@@ -198,7 +223,8 @@ def pull_baseball_season(year: int) -> dict:
     # Matchups – pull each known matchup period
     matchups = []
     current_period = getattr(league, "currentMatchupPeriod", 25) or 25
-    for period in range(1, current_period + 1):
+    max_period = max(int(current_period), 25)
+    for period in range(1, max_period + 1):
         try:
             scoreboard = league.scoreboard(matchupPeriod=period)
             for m in scoreboard:
@@ -229,7 +255,7 @@ def pull_baseball_season(year: int) -> dict:
         "pulled_at": datetime.now().isoformat() + "Z",
         "settings": settings,
         "teams": teams,
-        "matchups": matchups,
+        "matchups": dedupe_matchups(matchups),
         "draft": draft,
     }
 
