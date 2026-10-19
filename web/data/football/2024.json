@@ -2,7 +2,7 @@
   "sport": "football",
   "league_id": 225969362,
   "year": 2024,
-  "pulled_at": "2026-10-13T17:50:59.454438Z",
+  "pulled_at": "2026-10-19T17:15:31.402921Z",
   "settings": {
     "name": "Fantasy Balls",
     "scoring_type": "H2H_POINTS",
@@ -1421,19 +1421,6 @@
     {
       "matchup_period": null,
       "scoring_period": null,
-      "home_team_id": 9,
-      "home_team_name": "Josh(in) on my Jacob",
-      "home_score": 116.0,
-      "away_team_id": null,
-      "away_team_name": null,
-      "away_score": 0,
-      "winner": null,
-      "is_playoff": true,
-      "is_consolation": false
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
       "home_team_id": 2,
       "home_team_name": "Nabers Touched My Penix",
       "home_score": 156.2,
@@ -1453,19 +1440,6 @@
       "away_team_id": 1,
       "away_team_name": "Fat Boy Connor",
       "away_score": 168.26,
-      "winner": null,
-      "is_playoff": true,
-      "is_consolation": false
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 5,
-      "home_team_name": "Canned Heat",
-      "home_score": 144.46,
-      "away_team_id": null,
-      "away_team_name": null,
-      "away_score": 0,
       "winner": null,
       "is_playoff": true,
       "is_consolation": false

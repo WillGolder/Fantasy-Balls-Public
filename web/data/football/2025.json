@@ -2,7 +2,7 @@
   "sport": "football",
   "league_id": 225969362,
   "year": 2025,
-  "pulled_at": "2026-10-13T17:51:06.956060Z",
+  "pulled_at": "2026-10-19T17:15:39.317633Z",
   "settings": {
     "name": "Fantasy Balls",
     "scoring_type": "H2H_POINTS",
@@ -1187,19 +1187,6 @@
     {
       "matchup_period": null,
       "scoring_period": null,
-      "home_team_id": 8,
-      "home_team_name": "Egbukakke",
-      "home_score": 0.0,
-      "away_team_id": null,
-      "away_team_name": null,
-      "away_score": 0,
-      "winner": null,
-      "is_playoff": true,
-      "is_consolation": false
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
       "home_team_id": 9,
       "home_team_name": "Tucker Kraft in my Bass",
       "home_score": 177.68,
@@ -1219,19 +1206,6 @@
       "away_team_id": 4,
       "away_team_name": "CTE isn't real ",
       "away_score": 140.8,
-      "winner": null,
-      "is_playoff": true,
-      "is_consolation": false
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 7,
-      "home_team_name": "Hunter? I hardly know 'er!",
-      "home_score": 167.4,
-      "away_team_id": null,
-      "away_team_name": null,
-      "away_score": 0,
       "winner": null,
       "is_playoff": true,
       "is_consolation": false

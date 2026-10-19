@@ -2,7 +2,7 @@
   "sport": "football",
   "league_id": 225969362,
   "year": 2023,
-  "pulled_at": "2026-10-13T17:50:51.858578Z",
+  "pulled_at": "2026-10-19T17:15:22.997050Z",
   "settings": {
     "name": "Fantasy Balls",
     "scoring_type": "H2H_POINTS",
@@ -1187,19 +1187,6 @@
     {
       "matchup_period": null,
       "scoring_period": null,
-      "home_team_id": 6,
-      "home_team_name": "Barkleys Thunder Thighs",
-      "home_score": 102.2,
-      "away_team_id": null,
-      "away_team_name": null,
-      "away_score": 0,
-      "winner": null,
-      "is_playoff": true,
-      "is_consolation": false
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
       "home_team_id": 7,
       "home_team_name": "Return of the King",
       "home_score": 104.5,
@@ -1219,19 +1206,6 @@
       "away_team_id": 9,
       "away_team_name": "Seattle Suckerpunchers",
       "away_score": 170.12,
-      "winner": null,
-      "is_playoff": true,
-      "is_consolation": false
-    },
-    {
-      "matchup_period": null,
-      "scoring_period": null,
-      "home_team_id": 4,
-      "home_team_name": "Win or lose, we booze",
-      "home_score": 103.52,
-      "away_team_id": null,
-      "away_team_name": null,
-      "away_score": 0,
       "winner": null,
       "is_playoff": true,
       "is_consolation": false
